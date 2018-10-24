@@ -1,6 +1,6 @@
 <?php
 // Le fichier header.php est inclus sur la page
-include require_once(__DIR__.'/partials/hearder.php'); ?>
+require_once(__DIR__.'/partials/header.php'); ?>
 
     <main role="main" class="container">
         <h1>Mon Pizza Store WebSite</h1>
