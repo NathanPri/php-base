@@ -1,6 +1,8 @@
 <?php
 // Inclusion du fichier config
 require_once(__DIR__.'/../config/config.php');
+// Inclusion du fichier database
+require_once(__DIR__.'/../config/database.php');
 ?>
 
 <!doctype html>
