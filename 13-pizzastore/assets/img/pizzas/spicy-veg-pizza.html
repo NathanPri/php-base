@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="fragment" content="!" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" >
+    <meta property="fb:pages" content="1577478582500094" />
+    <meta name="alexaVerifyID" content="z-_UbtMJREiDNsBzfIL7z6VEklY"/>
+    <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" /> -->
+    <!-- fb mets tags -->
+    <meta property="fb:app_id" content="1616900588585152" />
+    <meta property="og:url" content="https://www.ketchupp.in/home" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ketchupp - India's First Meta Search Engine For Food" />
+    <meta property="og:image" content="https://www.ketchupp.in/assets/ketchupp-fav-icon.ico" />
+    <meta property="og:description" content='Ketchupp is an AI driven platform solving the consumer problem "What should I eat today? ". Discover awesome food that you will love to eat across Delhi/NCR , Mumbai, Bangalore, Hyderabad, Mumbai, Pune, Chennai & Kolkata and order it at best price. No more confusion. Easier decision making.' />
+    <meta name="description" content='Ketchupp is an AI driven platform solving the consumer problem "What should I eat today? ". Discover awesome food that you will love to eat across Delhi/NCR , Mumbai, Bangalore, Hyderabad, Mumbai, Pune, Chennai & Kolkata and order it at best price. No more confusion. Easier decision making.' />
+    <meta itemprop="description" content='Ketchupp is an AI driven platform solving the consumer problem "What should I eat today? ". Discover awesome food that you will love to eat across Delhi/NCR , Mumbai, Bangalore, Hyderabad, Mumbai, Pune, Chennai & Kolkata and order it at best price. No more confusion. Easier decision making.' >
+    <meta name="keywords" content="order best food, order best food online in Gurgaon, chinese, italian, snacks, sweets, north Indian, mughlai, hyderabadi, pizza, indian, veg/non veg thali, Ketchupp">
+    <meta name="prerender-status-code" content="200">
+    <base href="/">
+    <title>Ketchupp - India's First Meta Search Engine For Food</title>
+    
+
+    <!-- <script type="text/javascript" src="../lib/js/jquery.min.js"></script> -->
+    <script>
+      if (screen && screen.width < 767) {
+        document.write('<script type="text/javascript" src="../iscroll.min.js"><\/script>');
+      }
+      // else{
+      //   document.write('<script type="text/javascript" src="../lib/js/jquery.min.js"><\/script>');
+      //   document.write('<script type="text/javascript" src="../i-slick.js"><\/script>');
+      // }
+    </script>
+    
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js"></script> -->
+    <!-- <script type="text/javascript" src="../demoUtils.js"></script> -->
+
+ 
+
+    <!-- GA for analytics [Starts] -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-30026409-7', 'auto');
+    try{
+      ga('set', 'dimension2', localStorage.uuid);
+    }
+    catch(err) {
+      console.log('new-user');
+    }
+    </script>
+    
+  <script data-main="scripts/main_v2.1.42.min.js" src="../lib/js/require.js"></script>
+  <!-- <link href="../lib/css/bootstrap_v3.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/ketchuppstyle_v2.1.26.min.css">
+  <link rel="shortcut icon" type="image/png" href="assets/ketchupp-fav-icon.ico" media="none" onload="if(media!='all')media='all'"/>
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" media="none" onload="if(media!='all')media='all'"/>
+  <link href="./stylesheets/reactless-033afef2960d916954ca4f1715310f52.css" media="all" rel="stylesheet">
+  </head>
+  
+
+  <body ng-controller="AppMainCtrl">
+  <div class="visible-xs" ng-if="!landedonaPage" style="background-color: #e1001b;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); height: 100vh;text-align: center;padding-top: 50%;" >
+    <div >
+        <img lazy-src="../assets/ring.svg" style="width: 45px; margin-bottom: 20px;">
+      </div>
+    <div >
+        <img lazy-src="../assets/ketchupp_white_logo.svg">
+    </div>
+    
+  </div>
+   <div class="coverScreen" ng-if="stateChanging==1 && landedonaPage==1">
+    <div class="showbox">
+      <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+          <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+        </svg>
+      </div>
+    </div>
+  </div>  
+  <div ng-mousemove="userAction()" ng-if="stateChanging==0" ui-view="currentSection"></div>
+  
+    
+  <div async ng-include ="'../views/modals_v2.0.34.min.html'"></div>
+  
+    
+    <script> window.prerenderReady = false; </script>
+   <!--  <script type="text/javascript">
+    var require = {
+    
+    urlArgs : "bust=ketchupp2.0.2"
+    };
+    </script> -->
+       <!-- Facebook Pixel Code [Starts] -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1770263833225757');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+    <img height="1" width="1"
+    src="https://www.facebook.com/tr?id=1770263833225757&ev=PageView
+    &noscript=1" alt="facebook tracking pixel" />
+    </noscript>
+    <!-- Facebook Pixel Code [End] -->
+    
+    <update-title title="{{seoData.title}}"></update-title>
+    <update-meta property="og:url" content="{{currentUrl}}"></update-meta>
+    <update-meta name="description" content="{{seoData.meta_desc}}"></update-meta>
+    <update-meta property="og:description" content="{{seoData.meta_desc}}"></update-meta>
+    <update-meta property="og:title" content="{{seoDataTitle}}"></update-meta>
+    <update-meta itemprop="description" content="{{seoData.meta_desc}}"></update-meta>
+    <update-meta property="og:image" content="{{og_image}}"></update-meta>
+    <update-meta name="keywords" content="{{seoData.meta_keywords}}"></update-meta>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+
+</body>
+</html>
