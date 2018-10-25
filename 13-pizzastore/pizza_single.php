@@ -26,7 +26,7 @@ require_once(__DIR__.'/config/database.php');
     <main class="container">
         <div class='row'>
             <div class='col-md-6'>
-            <img class="card-img-top car-img-top-zoom-effect" src="assets/<?php echo $pizza['image']; ?>"
+            <img class="card-img-top card-img-fluid" src="assets/<?php echo $pizza['image']; ?>"
             alt="<?php echo $pizza['name']; ?>">
             </div>
             <div class='col-md-6'>
