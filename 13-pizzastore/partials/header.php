@@ -43,7 +43,7 @@ require_once(__DIR__.'/../config/database.php');
  
   <body>
   
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-yellow">
       <a class="navbar-brand" href="index.php"><?php echo $siteName; ?></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-pizzastore">
         <span class="navbar-toggler-icon"></span>

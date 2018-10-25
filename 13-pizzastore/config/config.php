@@ -15,4 +15,4 @@ $siteName = 'Pizza Store';
 // Page courante et titre de la balise title
 // $currentPageTitle = (empty($currentPageTitle)) ? null : $currentPageTitle;
 //   Si request_uri vaut /home/toto/fichier.php $page renverra fichier 
-$currentPageUrl = basename($_SERVER['REQUEST_URI'], '.php');
+$currentPageUrl = basename($_SERVER['SCRIPT_FILENAME'], '.php');

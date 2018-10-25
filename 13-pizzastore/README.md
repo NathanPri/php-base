@@ -18,3 +18,20 @@ Au niveau du PHP, on va crééer quelques fichiers/dossier :
 
 Au niveau Front
 -assets/ -> Dossier qui condiendra le css, le js, les images (en dur, pas le images de produits par ex)
+
+
+
+<!-- Ajout d'une Pizza -->
+-Creer la page pizza_add.php (Permettra d"ajouter une pizza côté admin)
+-Ne pas oublier header footer
+-ajouter un titre "ajoutrer une pizza"
+-ajouter un formulaire avec le champs suivants :
+    -Nom : libre
+    -Prix : 5 a 19.99e
+    -Image : libre
+    -Description : libre 
+    -Catégorie: select
+    -Bouton
+    -Faire le traitement du formulaire (vérifier les données)
+    -Modifier la bdd pr ajouter le champ description et categ dans la table pizza
+    -Ajouter Pizza dans la abse avec la requete
