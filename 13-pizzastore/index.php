@@ -3,7 +3,7 @@
 require_once(__DIR__.'/partials/header.php'); ?>
 
     <main role="main" class="container">
-        <h1>Mon Pizza Store WebSite</h1>
+        <h1 class="global-title">Mon Pizza Store WebSite</h1>
     </main>
 
 <?php

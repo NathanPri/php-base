@@ -1,0 +1,57 @@
+.page-title {
+    margin-top: 30px;
+    margin-bottom : 40px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e8e8e8;
+    font-family: 'Lobster', cursive;
+}
+
+.global-title {
+    font-family: 'Lobster', cursive;
+}
+
+/* 
+.zoom {
+    padding: 50px;
+
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);  */
+
+.card-img-top-container{
+    overflow: hidden;
+    font-family: 'Lobster', cursive;
+    z-index: 444444;
+}
+
+.car-img-top-zoom-effect{
+        transition : 0.5s;
+    }
+    
+.car-img-top-zoom-effect:hover{
+        cursor : pointer;
+        transform: scale(1.1);
+}
+
+
+.pastille{
+    position: absolute;
+    top:10px;
+    right: 5px;
+    
+    width:76px;
+    background:#dc3545;
+    height:46px;
+    text-align:center;
+    border-radius:100px;
+    z-index: 555555;
+    line-height: 45px; /* 100 - 10 */
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+

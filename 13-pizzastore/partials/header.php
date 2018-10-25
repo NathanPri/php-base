@@ -13,6 +13,8 @@ require_once(__DIR__.'/../config/database.php');
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
     <title>
     <?php 
