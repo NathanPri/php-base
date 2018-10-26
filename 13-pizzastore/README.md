@@ -29,8 +29,8 @@ Au niveau Front
     -Nom : libre
     -Prix : 5 a 19.99e
     -Image : libre
-    -Description : libre 
-    -Catégorie: select
+    -Description : libre (text)
+    -Catégorie: select (varchar ou enum)
     -Bouton
     -Faire le traitement du formulaire (vérifier les données)
     -Modifier la bdd pr ajouter le champ description et categ dans la table pizza

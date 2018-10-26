@@ -43,7 +43,7 @@ require_once(__DIR__.'/../config/database.php');
  
   <body>
   
-    <nav class="navbar navbar-expand-md navbar-dark bg-yellow">
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
       <a class="navbar-brand" href="index.php"><?php echo $siteName; ?></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-pizzastore">
         <span class="navbar-toggler-icon"></span>
@@ -57,6 +57,9 @@ require_once(__DIR__.'/../config/database.php');
           </li>
           <li class="nav-item <?= ($currentPageUrl === 'pizza_list') ? 'active' : ''; ?>">
             <a class="nav-link" href="pizza_list.php">Liste des Pizzas</a>
+          </li>
+          <li class="nav-item <?= ($currentPageUrl === 'pizza_add') ? 'active' : ''; ?>">
+            <a class="nav-link" href="pizza_add.php">Pizza Add</a>
           </li>
         </ul>
       </div>
