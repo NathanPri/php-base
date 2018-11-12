@@ -1,0 +1,2607 @@
+<!DOCTYPE html>
+<html class="sl-root decks show " data-account="" >
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>PHP</title>
+    <meta name="description" content="A presentation created with Slides." />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta property="og:title" content="PHP" />
+    <meta property="og:description" content="A presentation created with Slides." />
+    <meta property="og:site_name" content="Slides" />
+    <meta property="og:image" content="https://s3.amazonaws.com/media-p.slid.es/thumbnails/ce5962a31bd27cd32205532b37f39ca6/thumb.jpg?1539340393" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://slides.com/matthieumota/php" />
+    <meta property="fb:app_id" content="146002942236376" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic" rel="stylesheet" type="text/css" data-application-font="opensans">
+
+    <link rel="stylesheet" media="all" href="//assets.slid.es/assets/slides/slides-c6589daceaee3233280d83ec6d641c11d6f37071e10f2983d28ba50cbf7c3bc2.css" />
+    <link rel="stylesheet" media="all" href="//assets.slid.es/assets/application-df9b6a74074ba6931bf08a62c1fe5886827e92fe567b2ba3adbe6892adac2ac9.css" />
+    	<link rel="stylesheet" media="all" href="//assets.slid.es/assets/deck-v2-6853fb93cf33185f1e80dae6bcb6b0856c26856c3c882786b8e300caa8ac55cd.css" />
+
+
+
+<style id="user-css-output" type="text/css"></style>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="MRsi7VuuYMXnmU2NjCIhMQM3mxMIoKPOmIOQhkZKxoCXri41V/8pEseb1O7LW5VGMAeNxtj9Uq5verhkJ89Zpw==" />
+    <script type="text/javascript">
+  if( !/dnt=1/.test( window.location.search ) ) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39670045-1', 'auto');
+    ga('send', 'pageview');
+
+  }
+</script>
+    <!--[if lt IE 9]>
+    <script src="//assets.slid.es/assets/html5shiv-0bfa553ebc9c42abf66248f2f3feba0935da70b430bace410f80b72729c14820.js"></script>
+<![endif]-->
+    	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@Slides">
+	<meta name="twitter:title" content="PHP">
+	<meta name="twitter:description" content="An presentation created with Slides.">
+	<meta name="twitter:image" content="https://s3.amazonaws.com/media-p.slid.es/thumbnails/ce5962a31bd27cd32205532b37f39ca6/thumb.jpg?1539340393">
+
+  </head>
+  <body>
+    
+    <div id="container" class="container">
+      <header class="global-header show-on-scroll">
+  <div class="wrapper">
+    <h1 class="logo-animation">
+      <a class="symbol" href="/">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+      </a>
+      <a class="word" href="/"></a>
+    </h1>
+    <ul class="nav nav-long">
+        <li class="nav-item" data-page-id="home/explore">
+          <a class="nav-item-anchor" href="/explore"><span class="nav-item-label">Explore</span></a>
+        </li>
+        <li class="nav-item" data-page-id="static/features">
+          <a class="nav-item-anchor" href="/features"><span class="nav-item-label">Features</span></a>
+        </li>
+        <li class="nav-item" data-page-id="static/pricing">
+          <a class="nav-item-anchor" href="/pricing"><span class="nav-item-label">Pricing</span></a>
+        </li>
+        <li class="nav-item-divider"></li>
+        <li class="nav-item" data-page-id="sessions/new">
+          <a class="nav-item-anchor" href="/users/sign_in"><span class="nav-item-label">Log in</span></a>
+        </li>
+        <li class="nav-item nav-item-highlighted nav-item-secondary" data-page-id="static/pricing">
+          <a class="nav-item-anchor" href="/pricing"><span class="nav-item-label">Sign up</span></a>
+        </li>
+    </ul>
+  </div>
+</header>
+
+      
+      <div id="main" class="main " role="main">
+        
+
+
+
+
+
+
+<div class="marquee">
+
+	<div class="reveal-frame">
+		<div class="reveal-viewport theme-font-montserrat theme-color-blue-yellow">
+			<div class="reveal">
+				<div class="slides">
+					<section data-id="edc0ea5615a37a18277f5f713d607add"><div class="sl-block" data-block-type="text" style="width: 806px; left: 76px; top: 372px; height: auto;" data-block-id="dabe995518a79bb58bed972133ccf3ec"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>PHP</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 340px; height: 233px; left: 310px; top: 94px;" data-block-id="555ff36b832a822fcd0d7d389b0c8c21"><div class="sl-block-content" style="z-index: 12;" data-inline-svg="false"><img data-natural-width="350" data-natural-height="240" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4926936/Webysther_20160423_-_Elephpant.svg.png"></div></div></section><section data-id="7c5b4b2a27911504085ece8e81496262"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 22px; height: auto;" data-block-id="54bda792efbd0b5581c9bc0d8c4392ea"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1><span style="font-size:0.7em">Présentation</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 827px; left: 67px; top: 148px;" data-block-id="4c8b1e0b2f8b21ca29506a41bd543790"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li style="color:rgb(134, 209, 216)">
+	<p><span style="color:rgb(255, 255, 255)">Développeur web freelance depuis 5 ans</span></p>
+	</li>
+	<li style="color:rgb(134, 209, 216)">
+	<p><a href="http://www.boxydev.com/" target="_blank"><span style="color:rgb(88, 193, 186)">http://www.boxydev.com</span></a></p>
+	</li>
+	<li style="color:rgb(134, 209, 216)">
+	<p><span style="color:rgb(255, 255, 255)">Expérience en agence web, E-Commerce (annonceur)</span></p>
+	</li>
+	<li style="color:rgb(134, 209, 216)">
+	<p><span style="color:rgb(255, 255, 255)">Formation Informatique et Autodidacte</span></p>
+	</li>
+	<li style="color:rgb(134, 209, 216)">
+	<p><span style="color:rgb(255, 255, 255); text-align:left">Formateur et fan des OSS, contributeur à mes heures perdues</span></p>
+	</li>
+	<li style="color:rgb(134, 209, 216)">
+	<p><span style="color:rgb(255, 255, 255)">Solutions phares : Wordpress, Symfony, Magento, Prestashop, Angular</span></p>
+	</li>
+	<li style="color:rgb(134, 209, 216)">
+	<p><span style="color:rgb(255, 255, 255)">Langages : PHP, MySQL, HTML, CSS, JS</span></p>
+	</li>
+	<li style="color:rgb(134, 209, 216)"><span style="color:rgb(255, 255, 255)">Outils : Git, Docker, Vagrant, Trello</span></li>
+	<li style="color:rgb(134, 209, 216)"><span style="color:rgb(255, 255, 255)">Stack: ArchLinux, Gentoo, Mac OS (Unix addict)</span></li>
+</ul>
+</div></div></section><section data-id="f83d54d0889e341fe3677e8a33035141"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 22px; height: auto;" data-block-id="572b396132e91794dae665fa0fd5603c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1><span style="font-size:0.7em">Qu'est-ce que PHP ?</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 181px; top: 178px;" data-block-id="3eea6b5146dca0bcf2d829b88578befb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>PHP signifie "Hypertext Preprocessor" (acronyme récursif).</p>
+
+<p>C'est un langage de programmation qui est utilisé pour créer des pages web dynamiques. Il est compilé à la volée avec un serveur HTTP.</p>
+
+<p>Il est utilisé par des millions de sites web dans le monde dont Facebook et Wikipédia.</p>
+</div></div></section><section data-id="782f519deb06e44c1543f43a0135fa6c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 22px; height: auto;" data-block-id="a8830b8e93c21f8fd108550dfcae9ef0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Pourquoi ?</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 210px;" data-block-id="75c90c2e4115ae33a7149e193c85f9a6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>- Un espace membre</p>
+
+<p>- Un site ecommerce</p>
+
+<p>- Un forum</p>
+
+<p>- Un compteur de visites</p>
+
+<p>- Envoi de fichier via un formulaire</p>
+</div></div></section><section data-id="e83dfe13428ae1e1c6ea6e7720503eeb"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="13c93ebc722da29d09906cfc72be829f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Site statique vs Site dynamique</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 104px; height: 104px; left: 83px; top: 196px;" data-block-id="cb5f93e2dd14f1ba79717777612e177f"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4111520/html5.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 109px; height: 109px; left: 80px; top: 324px;" data-block-id="5439332e3d7d541424702fec868a3666"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="512" data-natural-height="512" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4934464/8b61de4c84033266e15317a6eb9fda2d-css3.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 74px; height: 102px; left: 98px; top: 458px;" data-block-id="c953c2eb5c74277bc7bf041763f2a57f"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="325" data-natural-height="450" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4934465/Badge_js-strict.svg.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 176px; left: 225px; top: 209px;" data-block-id="57233297a0b5c6148205b9a239e70f11"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p>Structure et contenu</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 176px; left: 225px; top: 489px;" data-block-id="29b62432d412beeacc37157242d43aa7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p>Animations</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 176px; left: 225px; top: 338px;" data-block-id="8339bd6f54a099c87484ebb4c31c699c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;">
+<p>Style et design</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 149px; height: 102px; left: 540px; top: 236px;" data-block-id="c571c00fb5f15b53b128b79e2825e1b2"><div class="sl-block-content" style="z-index: 18;"><img style="" data-natural-width="350" data-natural-height="240" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4926936/Webysther_20160423_-_Elephpant.svg.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 170px; height: 88px; left: 530px; top: 374px;" data-block-id="56b5c1071d235cf06b16e4cc30afb06c"><div class="sl-block-content" style="z-index: 19;"><img style="" data-natural-width="1280" data-natural-height="662" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4934467/MySQL.svg.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 231px; left: 688px; top: 268px;" data-block-id="f4cccf14335d4f48431b8a2cc8619474"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20;">
+<p>Dynamique</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 203px; left: 702px; top: 394px;" data-block-id="486cbf6fc24a4ae4f98335d6a4d820ec"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21;">
+<p>Base de données</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 60px; left: 424px; top: 338px;" data-block-id="595a210896da483a8c58e597d57d6fba"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22;">
+<p>&lt;=</p>
+</div></div></section><section data-id="b78d9a299ec3028b8db3a67b5ab6adb4"><div class="sl-block" data-block-type="text" style="width: 862px; left: 46px; top: 22px; height: auto;" data-block-id="737a4a9165f78db309eac9eb931bbe8e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui"><h1><span style="font-size:0.7em">Site statique vs Site dynamique</span></h1></div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 123px; height: 123px; left: 80px; top: 198px;" data-block-id="7b8049705c2eeede955c122f6156b00f"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4934549/user.png"></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 105px; height: 35px; left: 295px; top: 204px;" data-block-id="a34ed5f798c5eda142e776d02260dc61"><div class="sl-block-content" data-shape-type="arrow-right" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 105 35"><polygon points="0,10.5 52.5,10.5 52.5,0 105,17.5 52.5,35 52.5,24.5 0,24.5" class="shape-element" fill="rgb(255, 255, 255)"></polygon></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 105px; height: 34px; left: 295px; top: 295px;" data-block-id="925306be87cbd50e7b0566000f0cac8f"><div class="sl-block-content" data-shape-type="arrow-left" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 105 34"><polygon points="105,10.2 52.5,10.2 52.5,0 0,17 52.5,34 52.5,23.799999999999997 105,23.799999999999997 105,10.2" class="shape-element" fill="rgb(255, 255, 255)"></polygon></svg></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 54px; height: 54px; left: 240px; top: 284px;" data-block-id="96d6030a918778321f93cf4e2948a240"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4111520/html5.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 161px; height: 161px; left: 440px; top: 189px;" data-block-id="b053696c953de1d3dda07781be0c90ac"><div class="sl-block-content" style="z-index: 16;"><img style="" data-natural-width="720" data-natural-height="720" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4934560/server-multiple-icons-33.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 123px; height: 123px; left: 80px; top: 408px;" data-block-id="4c63a746dd5da65bd1f64e5b4eefa471"><div class="sl-block-content" style="z-index: 17;"><img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4934549/user.png"></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 105px; height: 34px; left: 295px; top: 505px;" data-block-id="2efb70b72f51d5ca41bd0f73eae53756"><div class="sl-block-content" data-shape-type="arrow-left" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 105 34"><polygon points="105,10.2 52.5,10.2 52.5,0 0,17 52.5,34 52.5,23.799999999999997 105,23.799999999999997 105,10.2" class="shape-element" fill="rgb(255, 255, 255)"></polygon></svg></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 54px; height: 54px; left: 240px; top: 494px;" data-block-id="254e9e7fc14654ab9c82bf0bb231400b"><div class="sl-block-content" style="z-index: 19;"><img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4111520/html5.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 161px; height: 161px; left: 440px; top: 399px;" data-block-id="3a3a40e2502ae1e8b8dc540b217415db"><div class="sl-block-content" style="z-index: 20;"><img style="" data-natural-width="720" data-natural-height="720" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4934560/server-multiple-icons-33.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 127px; height: 140px; left: 781px; top: 399px;" data-block-id="578a62cbc40caad982768a62577690f3"><div class="sl-block-content" style="z-index: 21;"><img style="" data-natural-width="540" data-natural-height="596" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4934563/database-symbol-hi.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 54px; height: 54px; left: 494px; top: 250px;" data-block-id="85b7c97fdce320508981a2e7b7efafeb"><div class="sl-block-content" style="z-index: 22;"><img style="" data-natural-width="256" data-natural-height="256" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4111520/html5.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 74px; height: 51px; left: 484px; top: 454px;" data-block-id="3928b98b762938ed5e93f279e8d25bc7"><div class="sl-block-content" style="z-index: 23;"><img style="" data-natural-width="350" data-natural-height="240" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4926936/Webysther_20160423_-_Elephpant.svg.png"></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 105px; height: 35px; left: 294px; top: 419px;" data-block-id="b9e52fd98e5b2e1b605e15b9f43ec07e"><div class="sl-block-content" data-shape-type="arrow-right" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 24;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 105 35"><polygon points="0,10.5 52.5,10.5 52.5,0 105,17.5 52.5,35 52.5,24.5 0,24.5" class="shape-element" fill="rgb(255, 255, 255)"></polygon></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 105px; height: 34px; left: 641px; top: 505px;" data-block-id="5281902140e70ffb4e87395aa04d85ec"><div class="sl-block-content" data-shape-type="arrow-left" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 105 34"><polygon points="105,10.2 52.5,10.2 52.5,0 0,17 52.5,34 52.5,23.799999999999997 105,23.799999999999997 105,10.2" class="shape-element" fill="rgb(255, 255, 255)"></polygon></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 105px; height: 35px; left: 640px; top: 419px;" data-block-id="73ef7f4440538d20fbb717f823a52852"><div class="sl-block-content" data-shape-type="arrow-right" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 26;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 105 35"><polygon points="0,10.5 52.5,10.5 52.5,0 105,17.5 52.5,35 52.5,24.5 0,24.5" class="shape-element" fill="rgb(255, 255, 255)"></polygon></svg></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 131px; height: 68px; left: 781px; top: 435px;" data-block-id="6af1a67424d665fd73fd077a43ce1463"><div class="sl-block-content" style="z-index: 27;"><img style="" data-natural-width="1280" data-natural-height="662" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4934467/MySQL.svg.png"></div></div></section><section data-id="d3415fc1a7e95211e0b7b148a45eb08a"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 22px; height: auto;" data-block-id="5366c539530a7f68d59e77ad614b1cfa"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1><span style="font-size:52,5px">Historique</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 140px;" data-block-id="6fe7065d098d69c5e410431dcecba500"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="color:rgb(255, 255, 255)">Il a été créé en 1994 par Rasmus Lerdorf. Personal Home Page Tools</span></p>
+
+<p> </p>
+
+<p><span style="color:rgb(255, 255, 255)">Historique des versions de PHP :</span></p>
+
+<p><span style="color:rgb(255, 255, 255)">1.0 : 1995</span> - 2.0 : 1997</p>
+
+<p>3.0 : 1998 - 4.0 : 2000</p>
+
+<p>5.0 : 2004 - 7.0 : 2015</p>
+
+<p>Versions de PHP conseillées en 2018</p>
+
+<p>5.6, 7.0, 7.1, 7.2</p>
+
+<p> </p>
+
+<p>Site officiel : <a href="https://php.net" target="_blank">https://php.net</a></p>
+</div></div></section><section data-id="eb9b68cd1b6bc66a0293b4b66a3227cf"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 22px; height: auto;" data-block-id="7b7c49811a957be34641147de24f6fa4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1><span style="font-size:52,5px">Ressources</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 175px;" data-block-id="eb472023959fa5580dbde99d327d1756"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<ul>
+	<li><a href="http://php.net/manual/fr/" target="_blank"><span style="color:#FFF0F5">php.net</span></a></li>
+	<li><a href="https://www.w3schools.com/php/default.asp" target="_blank"><span style="color:#FFF0F5">W3Schools</span></a></li>
+	<li><a href="https://openclassrooms.com/" target="_blank"><span style="color:#FFF0F5">OpenClassrooms</span></a></li>
+	<li><a href="https://www.grafikart.fr/" target="_blank"><span style="color:#FFF0F5">Grafikart</span></a></li>
+	<li><a href="https://stackoverflow.com/questions/tagged/php" target="_blank"><span style="color:#FFF0F5">StackOverflow</span></a></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 432px;" data-block-id="b1509d3400ab3bf86e2977e237c6b5bb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Soyez prudents et critiques face aux codes proposés par la communauté. Attention aux commentaires et à la date de publication.</p>
+</div></div></section><section data-id="6c6e284f1a9de4ec1322a8a56a06b350"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="cc2dd2468dadd7accd2b694635da14f4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1><span style="font-size:0.7em">Installation</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 172px;" data-block-id="da22be46a30b368bbed75e932ff93d63"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>- MacOS : MAMP</p>
+
+<p>- Windows : WAMP</p>
+
+<p>- Linux : LAMP</p>
+
+<p>- Tous : XAMP</p>
+
+<p> </p>
+
+<p>La première lettre représente le système d'exploitation.</p>
+
+<p>AMP signifie Apache, MySQL, PHP</p>
+</div></div></section><section data-id="5c5b141cb5c50eb3b245ea98af575ae6"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 6px; height: auto;" data-block-id="5843de221fa428a763d517c490248bb6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Ready ?</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 878px; left: 41px; top: 179px;" data-block-id="bf56b3c52d3fd6133cbeaa1048fb3767"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<p>- Un fichier PHP doit toujours avoir l'extension .php</p>
+
+<p>- Les fichiers PHP doivent être dans le dossier htdocs de notre XAMP</p>
+
+<p>- Le serveur Apache (HTTP) doit être lancé sur le port 80</p>
+
+<p>- Les fichiers de configuration peuvent être php.ini pour PHP, apache.conf pour Apache, my.cnf pour MySQL</p>
+
+<p>- On peut accéder à notre site via http://localhost et si un fichier index.php est présent, il sera chargé</p>
+</div></div></section><section data-id="78244f17acade848fbbafc51545fce90"><div class="sl-block" data-block-type="text" style="width: 862px; left: 52px; top: 22px; height: auto;" data-block-id="0dfe3a12d66d6615e09736f22f28c3b9"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1><span style="font-size:0.7em">Comment écrire du PHP ?</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 519px; height: 30px; left: 222px; top: 463px;" data-block-id="6716663c56e02222119f6359a4f819f3"><div class="sl-block-content notranslate" style="z-index: 11;"><pre class="php"><code>?&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 179px; top: 170px;" data-block-id="4d04ca141a8ba9c5faaec8f679fbfbeb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>- Un code PHP doit toujours commencer par l'ouverture de balise PHP</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 519px; height: 30px; left: 222px; top: 268px;" data-block-id="62a340e08c2ccaa63105f8781d7ab64f"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 182px; top: 322px;" data-block-id="21925ec57f002ef2c77060108a93491a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>- Un code PHP peut se terminer par une fermeture de balise PHP (Pas obligatoire si le fichier se termine par du code PHP)</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 182px; top: 520px;" data-block-id="a19fbcf7f1742995f8d7178cf771a71e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p>- Entre ces 2 balises, on écrira notre code PHP</p>
+
+<p>- On peut ouvrir et fermer les balises PHP plusieurs fois d'affilée</p>
+</div></div></section><section data-id="b1437651e9565f6ced0e98ce5058a520"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="5f5b675b23c6cdfdd97ec5ccb93ddf7f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Instruction en PHP</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 520px; height: 126px; left: 224px; top: 355px;" data-block-id="b8d1daa76ef4fb2ea2cbc96f439cae78"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+echo 'Texte entre quotes';
+echo "ou bien entre double quotes";
+
+?&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 793px; left: 87px; top: 166px;" data-block-id="92aa9119ae7cc6d98b9138df4ca31854"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Une instruction est un ordre que l'on donne au langage</p>
+
+<p>Chaque instruction PHP se termine par un ;</p>
+
+<p>On peut afficher une chaine de caractères avec une instruction "echo"</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 742px; left: 113px; top: 521px;" data-block-id="21250f2203befa7caf16fac86f6e5e4f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>Dans le navigateur, on ne verra que le texte et pas le code PHP</p>
+</div></div></section><section data-id="bb93ffb96f38051737c10a6fd02a5f64"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="230a9b6f5f61893dda30a01db3782ec1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Les commentaires en PHP</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 675px; height: 296px; left: 143px; top: 323px;" data-block-id="9b3efa0dfbe670e18ae4fd81706a8cc7"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+// Un commentaire sur une seule ligne
+
+/*
+Un commentaire
+sur plusieurs
+lignes
+*/
+
+// Un bout de code commenté
+/*
+echo 'test';
+*/</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 181px; top: 163px;" data-block-id="2337e736fbf3a11cf5dec93eb94e5411"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Commenter le code peut aider à se repérer dans son code ou aussi à rechercher les erreurs</p>
+</div></div></section><section data-id="cc037c371439a934ca87f16db1f9c31f"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="a2ca7cf7b052d97d6a8ef4d3a900b4d1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1><span style="font-size:0.7em">Et l'HTML ?</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 696px; height: 417px; left: 143px; top: 232px;" data-block-id="3dbc147aea64ce5115a5f82a39985eca"><div class="sl-block-content notranslate" style="z-index: 11;"><pre class="php"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Titre&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;?php
+        echo 'Chaine affichée en PHP';
+        // Si on veut utiliser les quotes dans la chaine, il faut les échapper avec un \
+        echo 'L\'HTML dans le PHP';
+        // On peut utiliser du HTML dans le PHP
+        echo 'Chaine affichée en PHP &lt;br /&gt;';
+    
+    ?&gt;
+    Chaine affichée en HTML
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 748px; left: 106px; top: 156px;" data-block-id="2ec1bd57dc3cbe622bdec64423e1f3d6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>On peut continuer à faire de l'HTML sans soucis</p>
+</div></div></section><section data-id="09fd78bfbd4a7d07bbf3c47354fc2b39"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="6ea1cf64c7693ac8e52f4d6d14c8645c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Les variables</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 748px; left: 106px; top: 156px;" data-block-id="4198fc2c7dcd2316c63c7a3b4d5b89b6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="color:rgb(255, 255, 255)">Une variable est une boîte avec une </span><strong>étiquette</strong><span style="color:rgb(255, 255, 255)"> contenant une </span><strong>donnée</strong><span style="color:rgb(255, 255, 255)">.</span></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 834px; height: 178px; left: 63px; top: 253px;" data-block-id="0bac67c0be19200f674f6a9acb7d3a1e"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+$age = 26; // Initialise une variable et lui affecte la valeur 26
+$mon_age = 26; // Underscore
+$monAge = 26; // lowerCamelCase
+$doubleAge = $monAge * 2; // $doubleAge vaut 52
+
+echo $doubleAge; // Affiche 52</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 755px; left: 103px; top: 474px;" data-block-id="46d0b6f9d638d1f0938b49e02340733b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 80%;">
+<ul>
+	<li style="color:rgb(255, 255, 255)">En PHP, une variable commence toujours par $</li>
+	<li style="color:rgb(255, 255, 255)">Par convention, choisir un nom de variable compréhensible.</li>
+	<li style="color:rgb(255, 255, 255)">Eviter les accents, caractères spéciaux</li>
+	<li style="color:rgb(255, 255, 255)">Ne doit pas commencer par un chiffre</li>
+	<li style="color:rgb(255, 255, 255)">CamelCase ou under_score</li>
+</ul>
+</div></div></section><section data-id="3ddb0ff25aa7de7e090eada4f3b87f96"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="d51419ee3161b47b65539253885f8c0e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Types de variables</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 748px; left: 106px; top: 162px;" data-block-id="6458c9902b3676cb0fbeedbadd6adf53"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Il existe 8 types de données en PHP</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 560px; height: 267px; left: 200px; top: 231px;" data-block-id="d70a96840ce3b188ab4f3954840eaf1f"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+$string = 'Hello';
+$integer = 26;
+$float = 3.14;
+$boolean = true;
+$array = [1, 2, 3];
+$array2 = array(1, 2, 3);
+// Tableau associatif
+$array3 = ['a' =&gt; 1, 'b' =&gt; 2, 'c' =&gt; 3];
+$object = new Object();
+$null = null;
+$resource = fopen('C:\fichier.txt');</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 521px;" data-block-id="3f38e16cffa6e1e1aaf3580c476ddcfd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p><strong>Attention au typage faible</strong></p>
+</div></div></section><section data-id="6f18ecae84b08523f761b049e6dcf711"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="a880c0f132439575b86161699cff4863"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1><span style="font-size:0.7em">Concaténation</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 748px; left: 106px; top: 148px;" data-block-id="f7c05fbca812dc57eb514d45ad97fce7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>La concaténakwa ?</p>
+
+<p>La concaténation permet de mettre à bout au moins 2 chaines de caractères</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 838px; height: 360px; left: 61px; top: 300px;" data-block-id="3a725b30dc542413791acfda7dd3cf55"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+/* Opérateur de concaténation */
+$a = 'Hello ';
+$b = $a . 'World !'; // $a ne change pas mais $b vaut désormais "Hello World !"
+
+/* Opérateur d'affectation concaténant */
+$c = 'Hello ';
+// On concatène cette chaîne à la précédente, $c vaut désormais "Hello World !"
+$c .= 'World !';
+
+/* Il est tout à fait possible de combiner les deux */
+$d = 'Hello ';
+$e = 'World ';
+$d .= $e . '!'; // $e ne change pas, mais $d vaut désormais "Hello World !"
+echo $d;</code></pre></div></div></section><section data-id="09cf7a9ff65e78d40e482d0052264b6b"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="bacec7358963fc4957faecf753054e89"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Exercice simple</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 170px;" data-block-id="5cdb03dabe54ec2fae7a8bdebb0b77a6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<ol>
+	<li>Dans le dossier, créer un fichier hello.php</li>
+	<li>Définir une variable contenant votre prénom</li>
+	<li>Afficher "Bonjour prénom" dans un h1</li>
+</ol>
+</div></div></section><section data-id="d7bad2356e3a4578bec6dd1abe6b9395"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="9a6c0579e9181ab410ad62d3366738d2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Opérations</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 191px;" data-block-id="6c372f1e516a0f77f5a7d965c05baac2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Opérateurs arithmétiques</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 705px; height: 391px; left: 128px; top: 280px;" data-block-id="01decd0c090103e6dfbd68cd406af3eb"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>
+&lt;?php
+
+$a = 10; // Ici, c'est l'opérateur d'affectation
+// Ci-dessous, opérateurs arithmétiques
+$a + 30; // Addition 40
+echo 10 - 5; // Soustraction 5
+echo 3 * 2; // Multiplication 6
+$a = 3 + 3; // on peut modifier une variable en cours de route
+echo $a / 2; // Division 3 car a vaut 6
+echo 10 % 3; // Modulo (Reste de la division) 1
+echo 10 ** 2; // Exponentielle: 10 à la puissance 2 (PHP 5.6+) 100
+echo -$a; // -10
+
+$a += $b; // équivaut à $a = $a + $b;
+$a -= $b; // équivaut à $a = $a - $b;
+$a *= $b; // équivaut à $a = $a * $b;
+$a /= $b; // équivaut à $a = $a / $b;
+$a %= $b; // équivaut à $a = $a % $b;</code></pre></div></div></section><section data-id="8a7837e669845b59f485cf895844fc9a"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="4720e77290c9826f5f4d716d62ab0b94"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Comparaison</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 140px;" data-block-id="37d921c3262f421c675b4b15bdba70db"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Les opérateurs de comparaison renvoient true ou false</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 845px; height: 295px; left: 58px; top: 273px;" data-block-id="089e9f3aa6f3684c2fd6a123b32a99d4"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+$a == $b; // vrai si $a est égal à $b
+// vrai si $a est égal à $b et qu'ils sont du même type (integer, string, etc.)
+$a === $b;
+// vrai si $a est différent de $b
+$a != $b; /*ou*/ echo $a &lt;&gt; $b;
+$a !== $b; // vrai si $a est différent de $b ou qu'ils ne sont pas du même type
+$a &lt; $b; // vrai si $a est strictement inférieur à $b
+$a &gt; $b; // vrai si $a est strictement supérieur à $b
+$a &lt;= $b; // vrai si $a est inférieur ou égal à $b
+$a &gt;= $b; // vrai si $a est supérieur ou égal à $b
+!$a; // vrai si $a vaut false</code></pre></div></div></section><section data-id="97caebfe6188f2a719a10cdbd06cc1fb"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="977db9762c260f9ca278b50e606c7a64"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1><span style="font-size:0.7em">Conditions</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 694px; left: 133px; top: 119px;" data-block-id="3b0a545413ec954c710184da72c9ba97"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:0.7em">Cas d'utilisation des opérateurs de comparaison.</span></p>
+
+<p><span style="font-size:0.7em">Pour rappel, une condition est "SI quelque chose est vrai FAIS quelque chose SINON FAIS autre chose</span></p>
+
+<p><span style="font-size:0.7em">Attention, les blocs d'instructions { } ne se termine pas par un ;</span></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 902px; height: 353px; left: 29px; top: 314px;" data-block-id="90b24c968d9479d2f56236597f7a6c8f"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+$a = 3;
+$condition = 0 === false;
+
+if ($a == 0) {
+    // Si $a vaut 0, les instructions présentes ici seront exécutées
+} elseif ($a &gt; 12 &amp;&amp; $a &lt;= 42) {
+    // Si $a est supérieur à 12 et inférieur ou égal à 42,
+    // les instructions présentes ici seront exécutées.
+} else if ($condition) {
+    // Si $condition est vraie, l'instruction présente ici sera exécutée.
+} else {
+    // Sinon, si aucune des 2 conditions précédentes n'est remplie,
+    // les instructions présentes ici seront exécutées.
+    // Ici, $a vaut 3, il ne vaut donc pas 0 et n'est pas compris entre 12 et 42 inclus.
+    // C'est donc ce bloc d'instruction qui sera exécuté et non les 2 précédents.
+}</code></pre></div></div></section><section data-id="7295e14f9ce3e8fcd21bb2bf792dc5a4"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="0407881b9effd873f7404026c3d2f922"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Opérateurs logiques</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 902px; height: 305px; left: 29px; top: 255px;" data-block-id="3531d03bf29454e0fe476d6799fffb8c"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+$a &amp;&amp; $b; $a and $b; // True si $a ET $b sont true
+$a || $b; $a or $b; // True si $a OU $b est true
+$a xor $b; // True si $a OU $b est true mais pas les 2 à la fois
+
+if ($a &amp;&amp; $b &amp;&amp; $c) {
+    // On fais quelque chose
+}
+
+// Attention aux priorités, le AND est comme une multiplication (prioritaire)
+// Et le OR comme une addition (pas prioritaire)
+if ($a || $b &amp;&amp; $c) {
+    
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 171px;" data-block-id="d05e70673ca20373833c64027982c201"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Permet d'associer des opérations</p>
+</div></div></section><section data-id="a67cca0337acf7357eea3d292f491bc6"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="261606d69bff0922319a9168a908497f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Incrémentation</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 715px; height: 145px; left: 124px; top: 345px;" data-block-id="e5a1623a775c849fdace3e6f5d2a6b16"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+++$a; // La variable est incrémentée de 1, puis elle est retournée
+$a++; // La variable est retournée, puis incrémentée de 1
+--$a; // La variable est décrémentée de 1, puis elle est retournée
+$a--; // La variable est retournée, puis décrémentée de 1</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 171px;" data-block-id="2fe71a7381976024106a5d103999b938"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>L'incrémentation (et la décrémentation) permettent d'ajouter ou d'enlever 1 à un nombre ou une chaine de caractères.</p>
+</div></div></section><section data-id="5f21c2c077af2f68174f7701087094b9"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="d35e5a752043848880891c6bda55d1d1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1><span style="font-size:0.7em">Les erreurs</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 715px; height: 207px; left: 123px; top: 290px;" data-block-id="dde4eafd937cec1bfc1ad90ffabafbcf"><div class="sl-block-content notranslate" style="z-index: 11;"><pre class="php"><code>&lt;?php
+
+echo $a; // Affiche une NOTICE, mais le script ne s'arrête pas
+echo 1 / 0; // Affiche un WARNING, division par zéro
+
+echo 3;
+echo 4 // Affiche une ERROR Parse error: syntax error
+echo 6;</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 710px; left: 125px; top: 140px;" data-block-id="b8e9be2495d1307484e08435ade893ec"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 80%;">
+<p>Il est normal de faire des erreurs, le plus important est de savoir les debuger.</p>
+
+<p>3 niveaux d'erreurs : NOTICE, WARNING, ERROR</p>
+</div></div></section><section data-id="6fb487d68b9925db03b77637d8692cfc"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="0e8b4224d27052f6f30f540d186cc664"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1><span style="font-size:0.7em">Debug</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 715px; height: 181px; left: 123px; top: 290px;" data-block-id="fc540084b1307776fa666e74b92cd6ec"><div class="sl-block-content notranslate" style="z-index: 11;"><pre class="php"><code>&lt;?php
+
+$tableau = [1, 2, 3];
+
+print_r($tableau); // Affiche le contenu du tableau non formaté
+die('Stop le script'); // Arrête le script avec un message ou pas
+var_dump($tableau); // Affiche le contenu du tableau formaté</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 710px; left: 125px; top: 140px;" data-block-id="c2c8b307e71b311c54d59ca298cb6682"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 80%;">
+<p>Il existe 3 fonctions importantes en PHP pour s'aider dans le debug d'erreur</p>
+</div></div></section><section data-id="1796b09f82ed3c251a2e0a9b779274b4"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="32cc11c7bdef9272b368a6d2128a7768"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 171px;" data-block-id="51c592f75f3b05594b74ffad5cc55403"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ol>
+	<li><span style="font-size:0.7em">Créer un fichier major.php</span></li>
+	<li><span style="font-size:0.7em">Créer une variable age comprise entre 0 et 20.</span></li>
+	<li><span style="font-size:0.7em">Ecrire une condition qui permet de vérifier si la personne est majeure. Si c'est le cas, on affiche "Vous pouvez entrer" sinon "Interdit"</span></li>
+	<li><span style="font-size:0.7em">Ajouter à la condition:<br>
+	- Si la personne a entre 16 ET 18 ans non inclus<br>
+	-&gt; "Vous êtes presque majeur"<br>
+	- Si la personne a entre 14 ET 16 ans non inclus<br>
+	-&gt; "Vous êtes jeune"<br>
+	- Si la personne a moins de 14 ans<br>
+	-&gt; "Vous êtes trop jeune"</span></li>
+</ol>
+</div></div></section><section data-id="b17e80bc4e0af5a1df96f33fd3ba7511"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="39a93f4a5148c6d61b3e1a4ff26b9b30"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1><span style="font-size:0.7em">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 154px;" data-block-id="0e6bcdd5a199161303ab77ae672ee489"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ol>
+	<li><span style="font-size:0.7em">Créer un fichier operation.php</span></li>
+	<li><span style="font-size:0.7em">Stocker 15 dans une variable.</span></li>
+	<li><span style="font-size:0.7em">Stocker 5 dans une autre variable.</span></li>
+	<li><span style="font-size:0.7em">Stocker 8 dans une autre variable.</span></li>
+	<li><span style="font-size:0.7em">Afficher ceci dans la page (en dynamique) :</span></li>
+</ol>
+
+<p><span style="font-size:0.7em">​</span><span style="color:rgb(255, 255, 255); text-align:left">15 + 5 + 8 = 28</span></p>
+
+<p><span style="color:rgb(255, 255, 255); text-align:left">15 x (5 - 8) = -45</span></p>
+
+<p><span style="text-align:left">(8 - 5) / 15 = 0.2</span></p>
+
+<p><span style="font-size:0.7em">Si une des opérations a un résultat inférieur à 20, afficher "Une des opérations renvoie moins de 20" en bas de la page</span></p>
+</div></div></section><section data-id="1fc185a986ead408ca5ba6755b403bf6"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="23d182a1e08fbf24bd6911b2e05a0740"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1><span style="font-size:0.7em">Serveur HTTP</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 140px;" data-block-id="b45be045dc69984af3079163ceefb6c7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:0.7em">HTTP (HyperText Transfer Protocol) est un langage qui permet à 2 machines de communiquer ensemble, le client et le serveur.</span></p>
+
+<p><span style="font-size:0.7em">Le client envoie une requête</span></p>
+
+<p> </p>
+
+<p> </p>
+
+<p><span style="font-size:0.7em">Le serveur envoie une réponse</span></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 466px; height: 89px; left: 247px; top: 317px;" data-block-id="f0a709c8a21c0c5b196b032dbe8e5184"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>GET / HTTP/1.1
+Host: google.fr
+Accept: text/html
+User-Agent: Mozilla/5.0 (Macintosh)</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 466px; height: 166px; left: 254px; top: 454px;" data-block-id="c4603d6bafda99f0889ae74084979de8"><div class="sl-block-content notranslate" style="z-index: 14;"><pre class="php"><code>HTTP/1.1 200 OK 
+Date: Sun, 20 May2018 14:05:05 GMT
+Server: apache/2.4.33
+Content-Type: text/html 
+
+&lt;html&gt;
+  Vous êtes sur Google
+&lt;/html&gt;</code></pre></div></div></section><section data-id="5b52f40f76cab3f3554e2001d113fbe5"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 22px; height: auto;" data-block-id="2e34d95c5396275417871f7436ef01df"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;" dir="ui">
+<h1><span style="font-size:0.7em">Codes HTTP</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 350px;" data-block-id="33a6af9484de637798d35fd2c9c61b00"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>100 : Information</p>
+
+<p>200 : Succès</p>
+
+<p>300 : Redirection</p>
+
+<p>400 : Erreur du client</p>
+
+<p>500 : Erreur du serveur</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 202px;" data-block-id="8ea11bb0f569413e9f9f753bbe9a9245"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Le serveur renvoie toujours un code dans la réponse (200, 404, 403, 500).</p>
+</div></div></section><section data-id="4bf63dce121532964d3313bed10c1090"><div class="sl-block" data-block-type="text" style="width: 862px; left: 51px; top: 31px; height: auto;" data-block-id="b5173dfaa1ab63029de399bea87fbffb"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:0.7em">Les boucles</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 921px; height: 457px; left: 22px; top: 227px;" data-block-id="7d6157c36fbd771bbf4e59d7e57a3d42"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+/* for
+elle est composée d'une instruction d'initialisation, d'une condition d'exécution
+et d'une instruction à exécuter à chaque itération après le bloc d'instruction de la boucle
+*/
+for ($i = 0; $i &lt; 10; $i++) {
+    // instructions
+}
+
+/* foreach
+particulièrement utile, elle permet de parcourir un tableau (ou les propriétés d'un objet)
+*/
+$a = array(1, 2, 3);
+foreach ($a as $item) {
+    // instructions
+}
+
+// foreach permet également de récupérer la clé associée à la valeur dans le tableau
+$fruits = ['A' =&gt; 'abricot', 'B' =&gt; 'banane', 'C' =&gt; 'cerise'];
+foreach ($fruits as $lettre =&gt; $fruit) {
+    echo $lettre . '  :  '  . $fruit;
+    // Affichera pour la première itération "A  : abricot"
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 740px; left: 111px; top: 132px;" data-block-id="b1803ca58ed53d091b35812cac923a5e"><div class="sl-block-style" style="z-index: 13; transform: rotate(360deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Permet de répéter des instructions en fonction d'une ou plusieurs conditions particulière</p>
+</div></div></div></section><section data-id="a10ea60a6a16cc44867d0abe15522af4"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="4fc22bf06395cabfdda09366a736b328"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:0.7em">Les boucles - while</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 798px; height: 420px; left: 81px; top: 186px;" data-block-id="4cb1e7d30eb9619b0b984ae261ae5485"><div class="sl-block-content notranslate" style="z-index: 11;"><pre class="php"><code>&lt;?php
+/* while
+elle est similaire à for si ce n'est
+qu'elle n'a comme paramètre que la condition d'exécution
+*/
+$i = 0;
+while ($i &lt; 10) {
+    // instructions
+    $i++;
+}
+
+/* do…while
+fonctionne comme while, excepté que les instructions
+qu'elle conditionne sont exécutées 1 fois avant que la condition soit testée
+*/
+$i = 0;
+do {
+    // instructions
+    $i++;
+} while($i &lt; 10);</code></pre></div></div></section><section data-id="0fd2e3a4102d49c3fd10cf63808edcab"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="32a15e474c36852a34df2e025d5e5a81"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:0.7em">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 765px; left: 98px; top: 145px;" data-block-id="3039d261a93b441a6393c31e55fbb2c0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="font-size:0.7em">1. Ecrire une boucle qui affiche les nombres de 10 à 1</span></p>
+
+<p><span style="font-size:0.7em">2. Ecrire une boucle qui affiche uniquement les nombres pairs entre 1 et 100</span></p>
+
+<p><span style="font-size:0.7em">3. Ecrire le code permettant de trouver le PGCD de 2 nombres</span></p>
+
+<p><span style="font-size:0.7em">4. Coder le jeu du FizzBuzz</span></p>
+
+<p><span style="font-size:0.7em">Parcourir les nombres de 0 à 100</span></p>
+
+<p><span style="font-size:0.7em">Quand le nombre est un multiple de 3, afficher Fizz.</span></p>
+
+<p><span style="font-size:0.7em">Quand le nombre est un multiple de 5, afficher Buzz.</span></p>
+
+<p><span style="font-size:0.7em">Quand le nombre est un multiple de 15, afficher FizzBuzz.</span></p>
+
+<p><span style="font-size:0.7em">Sinon, afficher le nombre</span></p>
+</div></div></section><section data-id="1deb390f5bbd0bef601667a80f520316"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="551011e5e4114efd054171143d10e8cd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:0.7em">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 191px;" data-block-id="921806878a0a0055d98203f6ca6957ac"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui"><ol>
+<li>Créer une boucle qui affiche 10 étoiles (*)</li>
+<li>Imbriquer la boucle dans une autre boucle afin d'afficher 10 lignes de 10 étoiles</li>
+<li>Nous obtenons un carré. Trouver un moyen de modifier le code pour obtenir un triangle rectangle.</li>
+</ol></div></div></section><section data-id="48ed2fb4a9ab44a9b78dec2095b63f49"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="080930063e553396d49e6bb1b0ab8f2e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:0.7em">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 765px; left: 98px; top: 140px;" data-block-id="cae6d1616bb57fd851b38e9005952ad0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left;">
+<p><span style="font-size:0.7em">1. Nous voulons afficher l'ensemble des tables de multiplications de 1 à 10 sous cette forme :</span></p>
+
+<p><span style="font-size:0.7em">1 x 1 = 1</span></p>
+
+<p><span style="font-size:0.7em">1 x 2 = 2</span></p>
+
+<p><span style="font-size:0.7em">1 x 3 = 3</span></p>
+
+<p><span style="font-size:0.7em">... </span></p>
+
+<p><span style="font-size:0.7em">1 x 10 = 10</span></p>
+
+<p><span style="font-size:0.7em">---------------</span></p>
+
+<p><span style="font-size:0.7em">2 x 1 = 2</span></p>
+
+<p><span style="font-size:0.7em">2 x 2 = 4</span></p>
+
+<p><span style="font-size:0.7em">2 x 3 = 6</span></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 578px; height: 311px; left: 320px; top: 228px;" data-block-id="b6358f814079e23dd7107514fd0b2482"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+// Pour vous aider
+
+for ($i = 1; $i &lt;= 10; $i++) {
+    echo '1 x ' . $i;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="6fba843067a335737e879277b260cd22" style="min-width: 4px; min-height: 4px; width: 410px; height: 410px; left: 266px; top: 220px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="313" data-natural-height="313" style="" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/4952403/mam-pythagore_0_10-313x313-141227.png"></div></div></section><section data-id="2cb9af017ffead9e98dc5186b50141a7"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 14px; height: auto;" data-block-id="0c5aebf2f37cecee04c9d99b8567040e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:0.7em">Fonctions internes de PHP</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 862px; height: 577px; left: 49px; top: 109px;" data-block-id="1577aa32006b0b2aaf370b85031a7184"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+/* isset() Si la variable $a n'existe pas déjà, on la défini avec comme valeur 42. */
+if (!isset($a)) {
+    $a = 42;
+}
+
+/* empty() Si la variable $a n'est pas vide, on affiche sa valeur. */
+if (!empty($a)) {
+    echo $a;
+}
+
+/* unset() Maintenant qu'on a défini puis utilisé la variable $a, on la détruit. */
+unset($a);
+
+/* time(); affecte à $t le nombre de secondes écoulées depuis le 01/01/1970
+à l'instant ou l'instruction est exécutée. */
+$t = time();
+
+/* date() Affichera la date au format JJ / MM / AAAA, par exemple 21 / 05 / 2018. */
+echo date('d / m / Y', $t);
+
+/* count() Affichera 3, car $b contient 3 valeurs. */
+$b = array('pomme', 'poire', 'abricot');
+echo count($b);
+
+/* strlen() Affichera 13, car $c contient 13 caractères (cela inclut les espaces) */
+$c = 'Hello World !';
+echo strlen($c);
+</code></pre></div></div></section><section data-id="54b36afaf8336858fbe8a67051a40a68"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 9px; height: auto;" data-block-id="b12028ab9d6cbe74225fd0dfe15d210a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:0.7em">Gestion des dates PHP</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 896px; height: 195px; left: 40px; top: 87px;" data-block-id="332e4ea972a0d9031bfc57917a4b4f34"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+// La fonction date permet d'afficher une date sous un certain format
+// Elle prend en second paramètre un timestamp de la date désirée
+// Par défaut, c'est le timestamp courant
+echo date('c'); // Affichera "2004-02-12T15:19:21+00:00"
+echo "Nous sommes à la semaine " . date('W'); // Affichera "Nous sommes à la semaine 42"
+echo date('d m Y H:i'); // Affichera "03 09 2015 18:48"
+echo date('H\h i\m s\s'); // Affichera "18h 55m 36s"</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 896px; height: 396px; left: 40px; top: 288px;" data-block-id="ffe5e8586ecdccb6fd8f4566a98c1013"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+time(); // Renvoie le timestamp courant
+
+// strtotime est l'inverse de date, on peut passer un texte plutôt que le timestamp
+// Usage simple
+echo strtotime('now'); // Affichera le timestamp actuel, équivalent à time()
+echo strtotime('9 january 2007'); // Affichera le timestamp de cette date, 1168297200
+
+// Usage relatif
+// Affichera le timestamp du lendemain du jour d'exécution du script
+echo strtotime('+1 day');
+// Affichera le timestamp relatif au jour d'exécution
+// du script avec 2 semaines 1 jour 5 heures et 30 secondes d'ajoutées à celui-ci
+echo strtotime('+2 weeks 1 day 5 hours 30 seconds');
+// Affichera le timestamp du lundi précédent le plus proche du jour d'exécution du script
+echo strtotime('last monday');
+// Usage avec paramètre
+// Affichera le timestamp correspondant à 6 mois après celui passé en paramètre
+echo strtotime('+6 months', $timestamp);</code></pre></div></div></section><section data-id="c0be748928b931b596fdeeaf7c04becf"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="741cf67b5441e5e97aa2bf926394e980"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:0.7em">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 171px;" data-block-id="32786292b27ff3c1a400c9e2a57ebf2d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>1. Nous cherchons à afficher la date du jour au format "Wednesday 24 may 2018, il est 10h38 et 12 secondes". Cherchez sur Google la fonction PHP permettant de faire cela. Comment choisir le format de la date ?</p>
+
+<p>2. Nous voulons récupérer le jour qu'il sera dans 10 jours exactement. Pensez que strtotime renvoie un timestamp.</p>
+</div></div></section><section data-id="a1b13e714bc11b7cffe64121cce0ff62"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="85a6080ed7565ae39d899fc4573e1e1e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:0.7em">Les tableaux</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 810px; height: 490px; left: 70px; top: 152px;" data-block-id="727b859b0ea755e06b8a9bc74868f4f3"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+// Tableau numérique à une dimension
+$notes = [10, 20, 15];
+// Comment récupérer le 20 ?
+$notes[1];
+// Tableau associatif à une dimension
+$notes = ['Jean' =&gt; 10, 'Eric' =&gt; 20, 'Matthieu' =&gt; 15];
+// Comment récupérer le 20 ?
+$notes['Eric'];
+
+// Tableau numérique à 2 dimensions
+$morpion = [
+    ['X', 'O', 'X'],
+    ['X', 'Xa', 'O'],
+    ['X', 'O', 'O']
+];
+
+// Alternative
+$morpion = array(); // J'initialise un tableau vide
+$morpion[0] = array('X', 'O', 'X');
+$morpion[1] = array('X', 'Xa', 'O');
+$morpion[2] = array('X', 'O', 'O');
+// Comment récupérer Xa ?
+$morpion[1][1];</code></pre></div></div></section><section data-id="84f3f1ff196991c1b641cca4f7ba0bb7"><div class="sl-block" data-block-type="text" style="width: 862px; left: 47px; top: 17px; height: auto;" data-block-id="609424486d6ccb6d69792b73a8ce132d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:0.7em">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 451px; height: 360px; left: 480px; top: 200px;" data-block-id="c2c7c2889b811ed45b1b6b9f4e942e82"><div class="sl-block-content notranslate" style="z-index: 12; font-size: 85%;"><pre class="php"><code>&lt;?php
+$eleves = [
+    0 =&gt; [
+        'nom' =&gt; 'Matthieu',
+        'notes' =&gt; [10, 8, 16, 20, 17, 16, 15, 2]
+    ],
+    1 =&gt; [
+        'nom' =&gt; 'Thomas',
+        'notes' =&gt; [4, 18, 12, 15, 13, 7]
+    ],
+    2 =&gt; [
+        'nom' =&gt; 'Jean',
+        'notes' =&gt; [17, 14, 6, 2, 16, 18, 9]
+    ],
+    3 =&gt; [
+        'nom' =&gt; 'Enzo',
+        'notes' =&gt; [1, 14, 6, 2, 1, 8, 9]
+    ]
+];
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 387px; left: 47px; top: 111px;" data-block-id="2038ad561b8b7f093ff749c07e5178bb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; line-height: 0.78;" data-has-line-height="">
+<p><span style="font-size:0.5em">1/ Afficher la liste de tous les éléves avec leurs notes.</span></p>
+
+<p><span style="font-size:0.5em">Exemple :</span></p>
+
+<p><span style="font-size:0.5em">Matthieu a eu 10, 8, 16, 20, 17, 16, 15 et 2</span></p>
+
+<p><span style="font-size:0.5em">Thomas a eu 4, 18, 12, 15, 13 et 7</span></p>
+
+<p><span style="font-size:0.5em">Jean a eu 17, 14, 6, 2, 16, 18 et 9</span></p>
+
+<p><span style="font-size:0.5em">2/ Calculer la moyenne de Jean. On part de $eleves[2]['notes']</span></p>
+
+<p><span style="font-size:0.5em">La fonction count permet de compter les éléments d'un tableau</span></p>
+
+<p><span style="font-size:0.5em">3/ Combien d'élèves ont la moyenne ?<br>
+Exemple :<br>
+Matthieu a la moyenne<br>
+Jean n'a pas la moyenne<br>
+Thomas a la moyenne<br>
+Nombre d'éléves avec la moyenne : 2</span></p>
+
+<p><span style="font-size:0.5em">4/ Quel(s) éléve(s) a(ont) la meilleure note ?<br>
+Exemple: Thomas a la meilleure note : 19</span></p>
+
+<p><span style="font-size:0.5em">5/ Qui a eu au moins un 20 ?<br>
+Exemple: Personne n'a eu 20<br>
+         Quelqu'un a eu 20</span></p>
+</div></div></section><section data-id="1483e47929b8438ce11f27845fbf22e0"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="59643be2bf79dae90081c1e46b3295d6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Fonctions utilisateur</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 140px;" data-block-id="7cb6ea9a7560dd3b0e6d03aaf708dd23"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>On peut créer des fonctions afin d'y ranger une portion de code que l'on souhaite réutiliser plus tard.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 350px; left: 80px; top: 280px;" data-block-id="44763707ce1eab004da6cfc2b5ce556c"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+// Déclare une fonction hello
+function hello($argument) {
+    return 'Hello ' . $argument;
+}
+
+echo hello('world!'); // L'appel de la fonction affiche Hello world!
+
+// Attention, on ne peut pas nommer 2 fonctions avec le même nom
+function say($argument, $argument2) {
+    return $argument . ' ' . $argument2;
+}
+
+echo say('Hello', 'world!'); // L'appel de la fonction affiche Hello world!
+</code></pre></div></div></section><section data-id="0c74fb3616978742c1bfae546dfdd3d4"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="4e6771b993788c95db650371145db464"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Portée des variables</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 124px;" data-block-id="3932ad56815f448f3d7864649eb63b34"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>La portée d'une variable est l'existence de celle-ci dans un contexte (dans le script ou dans une fonction)</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 412px; left: 80px; top: 267px;" data-block-id="7bbaccaacbf279240f92f774253f8b3b"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+$a = 10; // Portée globale
+
+function toto()
+{
+    $b = 2;  /* Portée locale*/
+
+    echo $a; // Erreur
+}
+
+toto();
+echo $b; // Erreur
+
+// Comment accèder à $a dans la fonction ?
+
+function toto()
+{
+    global $a;
+    echo $a; // Fonctionne
+}</code></pre></div></div></section><section data-id="abbbfdbd495c33fc57a21733730ab954"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="cd4c21255b82cdf4f276bdf65b02ce66"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 191px;" data-block-id="363bdf65b300659d24da11e6652f987f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui"><ol>
+<li>Créer une fonction calculant le carré d'un nombre</li>
+<li>Créer une fonction calculant l'aire d'un rectangle et une fonction pour celle d'un cercle</li>
+<li>Créer une fonction calculant le prix TTC d'un prix HT. Nous aurons besoin de 2 paramètres, le prix HT et le taux.</li>
+<li>Ajouter un 3ème paramètre à cette fonction permettant de l'utiliser dans les 2 sens (HT vers TTC ou TTC vers HT)</li>
+</ol></div></div></section><section data-id="b6ace1e6749bb7cebf4cd0e1462d1e04"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="370f2afe1d7a3d97bcdb3e74ddfb928b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Les superglobales</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 935px; height: 249px; left: 13px; top: 366px;" data-block-id="322a8b323c28df34fd29512ad73bf825"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+$_GET; // Tableau contenant toutes les données passée dans l'URL
+// index.php?key=valeur&amp;key2=valeur2 donne $_GET = ['key' =&gt; 'valeur', 'key2' =&gt; 'valeur2'];
+
+$_POST; // Tableau contenant toutes les données passée dans un formulaire
+// &lt;input name="key" value="valeur"&gt; donne $_POST = ['key' =&gt; 'valeur'];
+// Attention, la méthode du formulaire doit être en POST sinon on est
+// dans l'exemple du dessus et les données du formulaire seront exposées
+// dans l'URL. En POST, les données sont masquées (mais pas chiffrées).</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 181px; top: 140px;" data-block-id="458ad4ca52da356d209a95736a030762"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>$_GET et $_POST sont des variables superglobales.</p>
+
+<p>$_SERVER contient des informations sur le serveur et le client. $_SESSION sur la session et $_COOKIE sur les cookies.</p>
+</div></div></section><section data-id="1b8481126d95a0cd489daf32621956d5"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="1b8aa7be75be39990c8cf2a2091961a0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">URL et formulaire</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 140px;" data-block-id="d02990c698f87dffc6134eb4e97b8d06"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>http://localhost/php/search.php?q=query</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 640px; height: 111px; left: 160px; top: 196px;" data-block-id="ec4b1e94fe16ef0805ab455155134cca"><div class="sl-block-style" style="z-index: 13;"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+if (isset($_GET['q'])) {
+    echo 'on cherche ' . $_GET['q'];
+}</code></pre></div></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 831px; height: 280px; left: 80px; top: 409px;" data-block-id="67a7a9335d7bb5e37780eaae7bd43d31"><div class="sl-block-content notranslate" style="z-index: 14;"><pre class="none"><code>&lt;?php
+
+if (isset($_POST)) {
+    // $_POST contient ['nom' =&gt; 'Valeur', 'prenom' =&gt; 'Valeur']
+}
+
+?&gt;
+
+&lt;!-- L'attribut action permet de rediriger l'URL vers un autre fichier --&gt;
+&lt;form method="POST" action="index.php"&gt;
+    &lt;input type="text" name="nom"&gt;
+    &lt;input type="text" name="prenom"&gt;
+&lt;/form&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 318px;" data-block-id="b14e92c7ea22ca05763d6827adb2be8a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p>Pour un formulaire, l'attribut <strong>name</strong> est important.</p>
+</div></div></section><section data-id="fc0634e9127314c548536923064b6922"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="c943d6bd01da4c809a16f1cd37bd9986"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 191px;" data-block-id="459f9aa1a2c6b67c2be48b3e8139a7ef"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ol>
+	<li>Créer un formulaire sur calculator.php</li>
+	<li>Dans ce formulaire, créer un champ nombre1 et un champ nombre2</li>
+	<li>Au clic sur le bouton "Calculer", faire la somme du nombre1 et du nombre2</li>
+	<li>Ajouter un champ radio ou select permettant de choisir l'opération (+, -, /, *)</li>
+</ol>
+</div></div></section><section data-id="5aeff75dc02f608157a27796a1d3bcc2"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="725d3ea897f0673d762e1bf0d0c6374d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Stratégie de validation des données</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 124px;" data-block-id="bed2932215d73a94888bdb6a38500a01"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>En tant que développeur, il est très important de pouvoir valider les données afin de protéger le site d'attaques potentielles.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 851px; height: 378px; left: 60px; top: 301px;" data-block-id="cfaf245ad0918f0a14ba1d69103db81e"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+$nom = '';
+$nombre1 = 'a';
+$email = 'matthieu';
+
+if (strlen($nom) == 0) {
+    exit('Votre nom ne doit pas être vide');
+}
+
+if (!ctype_digit($nombre1)) {
+    exit('Le nombre1 n\'est pas un nombre valide');
+}
+
+if (false == filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    exit('Cet email n\'est pas valide');
+}</code></pre></div></div></section><section data-id="96eb190e7742f1aeb6cbc76788236b5a"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="723ac8ecb84a77e293045102a543f88c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 171px;" data-block-id="bb5bf9b915cf85d7dc7538af4bcbbdef"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ol>
+	<li>Créer un fichier contact.php</li>
+	<li>Créer un formulaire avec 3 champs</li>
+	<li>Email, Sujet et Message</li>
+	<li>L'email doit être valide et obligatoire</li>
+	<li>Le sujet ne doit pas être vide</li>
+	<li>Le message doit faire au minimum 15 caractères</li>
+</ol>
+</div></div></section><section data-id="a2dcd6c661dd512deb7e0d7e6451faa5"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="0a50b23188d7aaead4cdf1a121bbfff3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Fonctions sur les chaines</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 885px; height: 532px; left: 35px; top: 140px;" data-block-id="c666ac884e79aa2f6b6bdd88fa86892a"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="none"><code>&lt;?php
+
+$email = 'matthieu@boxydev.com';
+echo strlen($email); // Affiche 20
+
+// Affiche 'Un nombre 10 et une chaine toto'.
+echo sprintf('Un nombre %d et une chaine %s.', 10, 'toto');
+
+// Affiche '@boxydev.com', stristr idem mais insensible à la casse
+echo strstr($email, '@');
+
+// Affiche 8, la taille de la chaine avant @, stripos idem mais insensible à la casse
+echo strpos($email, '@');
+
+// Affiche matthieu@gmail.com, str_ireplace idem mais insensible à la casse
+echo str_replace('boxydev', 'gmail', $email);
+
+echo substr('abcdef', 2, 2); // Affiche "cd"
+echo substr('abcdef', 1, 3); // Affiche "bcd"
+echo substr('abcdef', 3);    // Affiche "def"
+
+echo substr("abcdef", -1); // Affiche "f"
+echo substr("abcdef", -2); // Affiche "ef"
+echo substr("abcdef", -3, 1); // Affiche "d"
+
+echo strrev('Hello world!'); // Affiche "!dlrow olleH"</code></pre></div></div></section><section data-id="17f12c652ab3f6fb52ff610b74f1bb36"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="0427e3993484115ef21df08d661e89f8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Fonctions sur les chaines 2</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 885px; height: 498px; left: 38px; top: 169px;" data-block-id="8d880690cda5c107d6c4f8d923f8e5bd"><div class="sl-block-content notranslate" style="z-index: 11;"><pre class="none"><code>&lt;?php
+
+$keywords = "php, js, html, css";
+$array_keywords = explode(', ', $keywords);
+echo $array_keywords[0]; // Affiche 'php'
+echo $array_keywords[1]; // Affiche 'js'
+echo $array_keywords[2]; // Affiche 'html'
+echo $array_keywords[3]; // Affiche 'css'
+
+$keywords = ['php', 'js', 'html', 'css'];
+$string_keywords = implode(', ', $keywords);
+echo $string_keywords; // Affiche "php, js, html, css"
+
+$message = 'Hello World';
+echo strtolower($message); // Affiche 'hello world';
+echo strtoupper($message); // Affiche 'HELLO WORLD';
+
+$message = '    Hello World  ';
+echo trim($message); // Affiche 'Hello World';
+
+$message = '&lt;h1&gt;Hello World, &lt;/h1&gt;&lt;p&gt;How are you ?&lt;/p&gt;';
+echo strip_tags($message); // Affiche 'Hello World, How are you ?'
+echo strip_tags($message, '&lt;h1&gt;'); // Affiche '&lt;h1&gt;Hello World, &lt;/h1&gt;How are you ?'</code></pre></div></div></section><section data-id="055775433ce19091522df751197e8bf5"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="edd19210ae3d508636e5bea004fecbe7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 191px;" data-block-id="6958d57184443fa68face65ac3894545"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ol>
+	<li>Acronyme : Créer une fonction qui prend en argument une chaine (World of Warcraft) et qui retourne les initiales de chaque mot en majuscule (WOW).</li>
+	<li>Conjugaison : Créer une fonction qui permet de conjuguer un verbe (chercher par exemple). Cela doit renvoyer toutes les conjugaisons au présent.</li>
+</ol>
+</div></div></section><section data-id="ddcbdfd5aec4a3ab55373614c7862737"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="7804ed02df7b4bfea0e04f8494ebab41"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Inclusion</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 132px;" data-block-id="2e824786b337235f7e154898e64ff81b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>On peut organiser notre code PHP dans plusieurs fichiers grâce aux inclusions.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 346px; left: 80px; top: 247px;" data-block-id="94fef900e8b41c071c0868a4bf3d28fa"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+/**
+ * Incluera le contenu de header.php
+ * Génère une erreur fatale en cas d'erreur
+ */
+// Exécute le contenu de header.php
+require('header.php');
+
+
+/**
+ * Incluera le contenu de header.php
+ * Déclenche un warning en cas d'erreur
+ */
+// Exécute le contenu de header.php
+include('header.php');</code></pre></div></div></section><section data-id="8df8a01d185c081fdf796a122f11717e"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="8db4302d9e7ac92e25811f776df0e32a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Inclusion 2</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 530px; left: 80px; top: 140px;" data-block-id="bb33203b402a46e248efe77fa743bb9d"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+/**
+ * Le fichier header.php
+ * ne sera inclus qu'à la premier instruction.
+ */
+include_once('header.php');
+include_once('header.php');
+include_once('header.php');
+
+/*
+PHP met à notre disposition des constantes magiques qui peuvent
+s'avérer très utiles pour l'inclusion :
+__DIR__ - Le répertoire du script actuel
+__FILE__ - Le fichier du script actuel
+__LINE__ - La ligne actuelle dans le script
+__FUNCTION__ - Le nom de la fonction actuelle
+*/
+
+/**
+ * Inclus le fichier header.php qui se situe dans
+ * le même répértoire que celui du script
+ */
+
+//  Permet d'éviter les ambiguités
+include(__DIR__.'/header.php');</code></pre></div></div></section><section data-id="a5a268fb5369fd5ac1829b762e0f98b7"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="c13cc3476b75ff710f40af0ed87d5333"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Exercices</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 500px; height: 137px; left: 230px; top: 228px;" data-block-id="799759f1fab3ad43a976769eda893792"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>.
+├── contact.php
+├── index.php
+└── partials
+    ├── footer.php
+    └── header.php</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 140px;" data-block-id="8c87f36e985f18bcb2deff3f25e34e5d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<ol>
+	<li>Reproduire cette structure dans un dossier</li>
+</ol>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 394px;" data-block-id="1d298668ad43c7e194cd1d7ee4acb90b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>2. index.php et contact.php doivent inclure header.php et footer.php</p>
+
+<p>3. Intégrer la page HTML https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/</p>
+</div></div></section><section data-id="df72df5f35ccb09f7b5aa5a58609925e"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="a9ac19d58bd11508f6b86af8d6e074d1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">PDO</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 140px;" data-block-id="b1c43e1b6dcb3c670cea63daeff8da64"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>L'extension PHP Data Objects (PDO) est une interface permettant d'interroger différents types de base de données. Elle est généralement utilisée en interface pour MySQL.</p>
+
+<p>On peut facilement switcher entre MySQL, sqlite, PostgreSQL sans modifier le code.</p>
+
+<p>Performant et possède des méthodes permettant de se prémunir des injections SQL.</p>
+
+<p><strong>ATTENTION, ne plus utiliser mysql_connect()</strong></p>
+</div></div></section><section data-id="cf42a4593945660c695087a1a62da0e9"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="bd5edf629d0ab9ac52a12f1208facf73"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Utilisation</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 140px;" data-block-id="b1bda1a8644d28c90a759bc60d2034f1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>PDO est une classe. Elle doit être instanciée. Son instance représente la connexion de PHP à la base de données.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 285px; left: 80px; top: 316px;" data-block-id="32299490d830cf3d0108865654d859ac"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+// $db est un objet PDO
+// Le premier paramètre est le DSN (Data Source Name)
+$db = new PDO('mysql:host=localhost;dbname=ma_bdd', 'login', 'password');
+
+// $query est un objet PDOStatement
+$query = $db-&gt;query('SELECT * FROM ma_table');
+
+// $result et $results sont des tableaux / objets
+// contenant les colonnes en clé et les données en valeur
+$result = $query-&gt;fetch(); // Renvoie une seule ligne de résultat
+$results = $query-&gt;fetchAll(); // Renvoie toutes les lignes de résultat</code></pre></div></div></section><section data-id="74327fa6170ca35223f8063cb7b6db81"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="fb5ef852395c44b4418432e939af27b8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Erreurs</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 152px;" data-block-id="9fede3ee34225a73f5548e99d7c5a6eb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Il peut y avoir des erreurs à la connexion. Dans ce cas, il faut vérifier la syntaxe ou alors que les accès soient corrects.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 285px; left: 80px; top: 311px;" data-block-id="cc1648fa98e704fe437df98b000fc174"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+$db = new PDO('mysql:host=localhost;dbname=ma_bdd', 'login', 'password');
+
+// [2002] php_network_getaddresses: getaddrinfo failed: Hôte inconnu
+// [2002] Une tentative de connexion a échoué car le parti connecté
+// n'a pas répondu convenablement au-delà d'une certaine durée
+// ou une connexion établie a échoué car l'hôte de connexion n'a pas répondu.
+// Erreur de couple login/mot de passe
+// [1045] Access denied for user 'root'@'localhost' (using password: YES)
+// La base de données n'existe pas
+// [1049] Unknown database 'db_name'</code></pre></div></div></section><section data-id="fac078d7dae16627b4102ae75139bb01"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="9287eb785462bdac95dc9bb9e60f867b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Récupérer des résultats</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 915px; height: 300px; left: 23px; top: 278px;" data-block-id="40cfd31d3c81fa65bbd7ee05b807eac9"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+$db = new PDO('mysql:host=localhost;dbname=ma_bdd', 'login', 'password', [
+    // On récupère tous les résultats en tableau associatif
+    PDO::ATTR_DEFAULT_FETCH_MODE =&gt; PDO::FETCH_ASSOC,
+]);
+
+$db-&gt;query('SELECT * FROM table');
+// Renvoie toutes les lignes de résultat
+// sous forme d'un tableau indexé numériquement
+$db-&gt;fetch(PDO::FETCH_NUM);
+
+// PDO::FETCH_BOTH Renvoie toutes les lignes de résultat
+// sous forme d'un tableau associatif</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 171px;" data-block-id="5722acbdf733440f7a6fb50e91a1687c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>On peut modifier la façon dont on récupère les résultats.</p>
+</div></div></section><section data-id="4c1f343bd1c38801ddb33e3a37ed7720"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="da40c17e3d1a8da9986c2a409ee77575"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Injection SQL</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 152px;" data-block-id="0094cb487977cab47e810592f99fcbbe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>L'injection SQL consiste à profiter d'une faille dans les paramètres d'une requête SQL afin d'exécuter un code malicieux.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 216px; left: 80px; top: 350px;" data-block-id="f209b57fd26c3273591a980a4b421dba"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>&lt;?php
+
+$id = $_GET['id']; // Si je passe "10; DROP DATABASE site;" dans l'url ??
+
+$query = $db-&gt;query('SELECT * FROM user WHERE id = '.$id);
+// La requête sera SELECT * FROM user WHERE id = 10; DROP DATABASE site;
+$user = $query-&gt;fetch();</code></pre></div></div></section><section data-id="297fa241650e14701644c5ebdf3b6c9d"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="b1f44544d8b4a9d6de48cac64dd4b96d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Injection SQL 2</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 149px;" data-block-id="e58233697b34d955afa0aee15641fa08"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>On peut utiliser une requête préparée afin de se prémunir des injections SQL.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 404px; left: 80px; top: 271px;" data-block-id="efa6c0101b60bbcb0e940069c4063328"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+$id = intval($_GET['id']);
+// Si je passe "10; DROP DATABASE site;" dans l'url,
+// cela renverra 10
+
+$query = $db-&gt;query('SELECT * FROM user WHERE id = '.$id);
+// La requête sera SELECT * FROM user WHERE id = 10
+$user = $query-&gt;fetch();
+
+// C'est mieux, mais il vaut mieux utiliser une requête préparée.
+$search = $_GET['q'];
+
+$query = $db-&gt;prepare('SELECT * FROM articles WHERE title LIKE :search');
+// Si je passe "chaine; DROP DATABASE site" dans la requête
+// SELECT * FROM articles WHERE title LIKE "chaine; DROP DATABASE site"
+$query-&gt;bindValue(':search', $search, PDO::PARAM_STR);
+$query-&gt;execute(); // Ne pas oublier d'exécuter la requête
+$search_results = $query-&gt;fetchAll();</code></pre></div></div></section><section data-id="4c30eaabf412bc8101572c92321ba565"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="61d955552943b141f7e6e55d1c44703f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Attaque XSS</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 140px;" data-block-id="ae9de3a1a18e7b0ea70279a40a2696a6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<p>L'attaque XSS (cross-site scripting) consiste à injecter du contenu dans une page comme une balise script par exemple.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 456px; height: 214px; left: 24px; top: 290px;" data-block-id="3f4dfa9e8bef80ae2573632f98d57a82"><div class="sl-block-content notranslate" style="z-index: 13; font-size: 80%;"><pre class="php"><code>&lt;?php
+$pseudo = $_POST['pseudo'];
+
+$query = $db-&gt;prepare('INSERT INTO
+user (pseudo)
+VALUES (:pseudo)');
+$query-&gt;bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
+$query-&gt;execute();
+?&gt;
+&lt;form method="POST"&gt;
+    &lt;input name="pseudo" type="text" /&gt;
+    &lt;input type="submit" value="OK" /&gt;
+&lt;/form&gt;
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 433px; height: 127px; left: 504px; top: 334px;" data-block-id="1c85bcd7d97565c644ec2a18dec72139"><div class="sl-block-content notranslate" style="z-index: 14; font-size: 80%;"><pre class="php"><code>&lt;?php
+$query = $db-&gt;query('SELECT pseudo FROM user');
+$users = $query-&gt;fetchAll();
+
+foreach($users as $user) {
+    echo $user['pseudo'].'&lt;br&gt;';
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 542px;" data-block-id="d9d3135186d59f58b406e67a28ab21f2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p>Que se passe t-il si j'ajoute un utilisateur avec le pseudo &lt;script&gt;location.href = 'http://www.google.fr';&lt;/script&gt;</p>
+</div></div></section><section data-id="3871259f7f8811d5cede218b42ff3350"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="8e5d612112e3bae7c88fa634767da898"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Attaque XSS 2</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 140px;" data-block-id="aeee2797624c56e0c114ac4249ddf04b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Pour se prémunir des attaques XSS, il faut utiliser des fonctions PHP</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 747px; height: 368px; left: 107px; top: 276px;" data-block-id="f73c051157563e93f1bf4e901c69bf29"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+// Supprime toutes les balises HTML
+$pseudo = strip_tags($_POST['pseudo']);
+// Remplace tous les caractères HTML par leur équivalent en HTML entities
+$pseudo = htmlspecialchars($_POST['pseudo']);
+
+$query = $db-&gt;prepare('INSERT INTO
+user (pseudo)
+VALUES (:pseudo)');
+$query-&gt;bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
+$query-&gt;execute();
+?&gt;
+&lt;form method="POST"&gt;
+    &lt;input name="pseudo" type="text" /&gt;
+    &lt;input type="submit" value="OK" /&gt;
+&lt;/form&gt;
+</code></pre></div></div></section><section data-id="098c96875aea9eb4c8d5d08ca23dd89c"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="be4dc54a8f046be82460af7e6304d80a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Requête préparée</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 548px; left: 80px; top: 140px;" data-block-id="8e86595c301dff2b8f5a7aa413c77f0a"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>&lt;?php
+
+$query = $db-&gt;prepare('SELECT * FROM ma_table WHERE id = :id');
+// La méthode bindValue() permet de transmettre la valeur
+// des paramètres d'une requête préparée.
+// Elle prends 3 arguments
+// Le nom du paramètre sous la forme :nom;
+// La valeur du paramètre qui peut être une chaîne ou un nombre;
+// Le type du paramètre
+// (PDO::PARAM_STR pour les chaînes, PDO::PARAM_INT pour les nombres);
+$query-&gt;bindValue(':id', 42, PDO::PARAM_INT);
+// Avec des points d'intérrogation
+// $query = $db-&gt;prepare('SELECT * FROM ma_table WHERE id = ?');
+// $query-&gt;bindValue(1, 42, PDO::PARAM_INT);
+$query-&gt;execute();
+$result = $query-&gt;fetch();
+
+
+// bindParam() est similaire mais permet de gagner en performances
+// quand on a de nombreuses requêtes. le paramètre est lié à une
+// variable qui n'est pas encore définie.
+$query = $db-&gt;prepare('INSERT INTO ma_table SET param = :param');
+$query-&gt;bindParam(':param', $param, PDO::PARAM_INT);
+
+for($i = 0; $i &lt; 10; $i++) {
+    $param = $i;
+    $query-&gt;execute();
+}   </code></pre></div></div></section><section data-id="aa4519f38bcb84ed3f7b9df36bdd3d9b"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="0cedcfb0ab9d2abe7c36d11e680f6c4b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Requêtes CRUD</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 872px; height: 519px; left: 44px; top: 140px;" data-block-id="abe63ef1ef1a846e3051bf65d661d7c4"><div class="sl-block-content notranslate" style="z-index: 11;"><pre class="php"><code>&lt;?php
+
+// Insertion
+$query = $db-&gt;prepare('INSERT INTO ma_table (col1, col2) VALUES (:value1, :value2)');
+$query-&gt;bindValue(':value1', 123, PDO::PARAM_INT);
+$query-&gt;bindValue(':value2', 'test', PDO::PARAM_STR);
+$query-&gt;execute();
+// Retourne l'identifiant inséré par la requête
+// (nécessite une clé primaire en AUTO_INCREMENT)
+$insert_id = $db-&gt;lastInsertId();
+
+// Update
+$query = $db-&gt;prepare('UPDATE ma_table SET col = :value WHERE id = :id');
+$query-&gt;bindValue(':value', 'test', PDO::PARAM_STR);
+$query-&gt;bindValue(':id', 123, PDO::PARAM_INT);
+$query-&gt;execute();
+// Retourne le nombre de lignes affectées par la requête
+$affected_rows = $query-&gt;rowCount();
+
+// Suppression
+$query = $db-&gt;prepare('DELETE FROM ma_table WHERE id = :id');
+$query-&gt;bindValue(':id', 123, PDO::PARAM_INT);
+$query-&gt;execute();
+// Retourne le nombre de lignes affectées par la requête
+$affected_rows = $query-&gt;rowCount();</code></pre></div></div></section><section data-id="d5c727cdf4cc0026a741eb01db7e1895"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="62532be1cfb4b260864d1aaa70ebd65e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Upload de fichier - Formulaire</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 140px;" data-block-id="c1634909f9d976d790e10a97e7443c49"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Nous savons envoyer des données en $_POST. Il est également possible d'envoyer des fichiers.</p>
+
+<p>Un formulaire d'upload doit absolument contenir l'attribut "enctype".</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 709px; height: 250px; left: 126px; top: 380px;" data-block-id="f2ac1f06d8b1815ea13c1b4cc778e417"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="xml"><code>&lt;!-- L'attribut enctype doit absolument être "multipart/form-data",
+et la méthode doit être POST --&gt;
+&lt;form method="POST" enctype="multipart/form-data"&gt;
+    &lt;!-- La balise input type="file" permet de
+    sélectionner un fichier sur son ordinateur.
+    Ne pas oublier l'attribut "name"--&gt;
+    &lt;input type="file" name="picture" /&gt;
+    &lt;input type="submit" value="Envoyer"/&gt;
+&lt;/form&gt;</code></pre></div></div></section><section data-id="2091ff9e48aaa86ad4995ad161a9c10e"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="e9dd4d68992e26c82d72a52b9656c5f8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Upload de fichier - $_FILES</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 171px;" data-block-id="a8983c20f103a3b28713762cf8cb3041"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Le fichier uploadé n'est pas disponible dans $_POST mais dans $_FILES.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 709px; height: 345px; left: 126px; top: 280px;" data-block-id="ab43848795d697d40b144b1120445133"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>Array
+(
+    [picture] =&gt; Array
+    (
+        // Nom original du fichier uploadé via le formulaire
+        [name] =&gt; MonFichierOriginal.jpg
+        // Type "mime" du fichier, plus fiable que l'extension
+        [type] =&gt; image/jpg
+        // Chemin complet du fichier uploadé sur le serveur
+        [tmp_name] =&gt; chemin_complet_du_fichier_sur_le_serveur
+        // Un code d'erreur si il y a une erreur, 0 si tout est ok
+        [error] =&gt; 0
+        // La taille en octets du fichier uploadé
+        [size] =&gt; 1000
+    )
+)</code></pre></div></div></section><section data-id="7100d9cb2192a87915606c6d27640ad0"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="9dbf0e0b9dbedc532602d0c8fa7dc037"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Upload de fichier - Traitement</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 709px; height: 323px; left: 126px; top: 329px;" data-block-id="6db7e63d66645f28973af04c13a9fdf8"><div class="sl-block-style" style="z-index: 12; transform: rotate(360deg);"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>// Retourne l'emplacement du fichier
+$file = $_FILES['picture']['tmp_name'];
+
+// Récupère le nom du fichier
+$originalName = $_FILES['picture']['name'];
+// Récupère l'extension du fichier
+$extension = pathinfo($originalName)['extension'];
+
+// Renomme le fichier
+$md5 = md5($originalName.uniqid());
+$filename = $md5.'.'.$extension;
+
+// Déplace le fichier vers un répertoire
+move_uploaded_file($file, __DIR__.'/upload/'.$filename);
+</code></pre></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 152px;" data-block-id="f56858c767571f68ac7c65e0774d4996"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Renommer le fichier peut être pratique afin d'être sûr qu'il porte un nom propre et unique.</p>
+</div></div></section><section data-id="e41a209a2f8ccaee589ff953113f8cdb"><div class="sl-block" data-block-type="text" style="width: 862px; left: 49px; top: 31px; height: auto;" data-block-id="5144a71236ba5ded381458e379682b24"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Traitement des fichiers</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 904px; height: 323px; left: 28px; top: 329px;" data-block-id="fe43347b305ba27bf6d27891c5c49373"><div class="sl-block-style" style="z-index: 12; transform: rotate(360deg);"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>// Ouvre le fichier comme dans Word et retourne une ressource
+$file = fopen('C:/xampp/htdocs/', 'r');
+// Le 2ème paramètre est le mode de lecture
+// "r" : "read-only". Ouvre le ficher en lecture seule.
+// "r+" : Ouvre le ficher pour l'écriture et la lecture.
+// (un "niveau" de plus que "r")
+// "w+" : "write". Ouvre le fichier pour l'écriture et la lecture, et
+// commence par le vider. Si le fichier n'existe pas, PHP tente de le créer.
+// "a" : "append". Ouvre le fichier en écriture seule
+// (voir un exemple plus loin), et place le pointeur à la fin du fichier.
+// "a+" : "append". Ouvre le fichier en lecture et écriture,
+// et place le pointeur à la fin du fichier.</code></pre></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 171px;" data-block-id="a533410e38637db116a0c6cd23fb9a98"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>PHP est un langage côté serveur et permet donc de manipuler des fichiers.</p>
+</div></div></section><section data-id="a4520fe59f7f683ea6722dd856309875"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 62px; height: auto;" data-block-id="1d2f7ec07e41dfae335d045ef1cfd862"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Traitement des fichiers - Lecture/Ecriture</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 904px; height: 378px; left: 28px; top: 210px;" data-block-id="ea9e9d142c7963a5566b51f876cdc158"><div class="sl-block-style" style="z-index: 11; transform: rotate(360deg);"><div class="sl-block-content notranslate" style="z-index: 11;"><pre class="php"><code>// Ouvrir le fichier et placer le pointeur (le curseur) à la fin
+$fileHandler = fopen('/var/log/db.log', 'a+');
+// Ajouter une ligne pour la date d'aujourd'hui
+$text = date('Y-m-d H:i:s') . ' : Une connexion a été ouverte';
+fwrite($fileHandler, $text);
+
+// Ouvrir le fichier et placer le pointeur au début
+$fileHandler = fopen('/var/log/db.log', 'r');
+// Enregistrer les dix premiers caractères
+$start = fread($fileHandler, 10);
+// Afficher le résultat
+echo $start;
+
+// On peut/doit fermer le fichier comme on ferme Word
+fclose($fileHandler);</code></pre></div></div></div></section><section data-id="c9cbc0ec0aa3b6cb61198333b0b25845"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 62px; height: auto;" data-block-id="e60a6ca4fdde69be49299e7b6804d9fe"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Traitement des fichiers - Raccourci</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 904px; height: 388px; left: 28px; top: 210px;" data-block-id="92a614ec46cef0c3db9c84f335128505"><div class="sl-block-style" style="z-index: 11; transform: rotate(360deg);"><div class="sl-block-content notranslate" style="z-index: 11;"><pre class="php"><code>// Le code suivant récupère, dans la variable $fileContent,
+// la totalité du fichier log.txt.
+$fileContent = file_get_contents('log.txt');
+
+// Le code suivant va enregistrer dans la variable $fileSection
+// les dix caractères à la vingtième position du fichier
+// log.txt (les caractères 20 à 29) :
+$fileSection = file_get_contents('log.txt', NULL, NULL, 20, 10);
+
+// Récupère l'intégralité du contenu du fichier
+$fruits = file_get_contents('fruits.txt');
+// Ajoute une ligne
+$fruits .= "Cerise\n";
+// Écrit le contenu mis à jour dans le fichier ouvert
+file_put_contents('fruits.txt', $fruits);
+
+// Supprime le fichier
+unlink('log.txt');</code></pre></div></div></div></section><section data-id="6f6a9be8adab10a4881c8ecc9d0cb394"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 62px; height: auto;" data-block-id="d848c60b723c735d7d08b06d7404db44"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Traitement des fichiers - Fonctions</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 904px; height: 388px; left: 28px; top: 210px;" data-block-id="e6dd812609f4e69125ee101f63db12b5"><div class="sl-block-style" style="z-index: 11; transform: rotate(360deg);"><div class="sl-block-content notranslate" style="z-index: 11;"><pre class="php"><code>// Vérifie qu'un fichier existe
+file_exists('./img/image.jpg');
+// Modifie les permissions d'un fichier
+chmod('./img/image.jpg', 0644);
+// Vérifie qu'un dossier existe
+is_dir('/var/site/img');
+// Copie un fichier
+copy('./img/image.jpg', './backup/img/image.jpg');
+// Déplace ou renomme un fichier
+rename('./img.png', '../img.png');
+// Donne le nom du dossier d'un fichier
+dirname(__FILE__) === __DIR__;
+// Date de dernière modification d'un fichier
+$filename = 'access.log';
+if (file_exists($filename)) {
+    echo "$filename a été modifié le " . date('d/m/Y à H:i:s.', filemtime($filename));
+}</code></pre></div></div></div></section><section data-id="41eadc05564aaa61ef7780602ae2e48b"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 62px; height: auto;" data-block-id="a14460b3d449413e5e54195f763fcbca"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">PHP 7</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 210px;" data-block-id="5eacb6e96ab9c45d7df234de11dd1865"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Evolution majeur de PHP.</p>
+
+<p>PHP 6 a été abandonné.</p>
+
+<p>2 fois plus performant que PHP 5.</p>
+
+<p> </p>
+
+<p><a href="http://www.zend.com/website/var/tmp/image-thumbnails/10000/14913/thumb__auto_8f003aa3d171b0e739a4314b85eb4f3d/php7-infographic.png" target="_blank">Infographie</a></p>
+</div></div></section><section data-id="047f5dac9ad6eca3fa9d41a847781e5e"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 62px; height: auto;" data-block-id="5e642b2455103230ae40c4713323ff7e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">PHP 7 - Nouveautés</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 761px; height: 490px; left: 100px; top: 175px;" data-block-id="bc3e850d1d8aa2a8e481d0562d906aa3"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>// Spaceship operator : &lt;=&gt;
+// 0 si les deux opérandes sont égaux,
+// 1 si celui de gauche est plus grand
+// -1 si celui de droite est plus grand.
+
+// Integers
+echo 1 &lt;=&gt; 1; // 0
+echo 1 &lt;=&gt; 2; // -1
+echo 2 &lt;=&gt; 1; // 1
+
+// Strings
+echo "a" &lt;=&gt; "a"; // 0
+echo "a" &lt;=&gt; "b"; // -1
+echo "b" &lt;=&gt; "a"; // 1
+
+// Null coalesce operator : ??
+// Avant
+$var = isset($maVar) ? $maVar : 'valeur_par_defaut';
+// Après
+$var =  $maVar ?? 'valeur_par_defaut';</code></pre></div></div></section><section data-id="dee3d009f1002703eb75ddeecde679a0"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 62px; height: auto;" data-block-id="8371c7ef15de1aebfcf4b5dcd6f98201"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">PHP 7 - Typage</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 761px; height: 290px; left: 100px; top: 175px;" data-block-id="d410d28c1386202024e625e03867e896"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>// Si cette ligne est présente, les paramètres ne sont
+// pas convertis vers le type attendu et cela
+// retourne une erreur fatale
+declare(strict_types=1);
+
+// On spécifie que $nom doit être un string et $age un integer
+function identite(string $nom, int $age) {
+    echo $nom. 'a '.$age.' ans';
+}
+
+// On spécifie que la valeur du retour doit être un bolean.
+function isAdult(int $age) : bool {
+    return $age &gt;= 18;
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 181px; top: 482px;" data-block-id="b8690b8cddba06cbd9b2fd5d9a42a894"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>PHP 7 ne lève que des exceptions lors des erreurs, ce qui permet de catcher plus facilement les erreurs pour le développeur.</p>
+</div></div></section><section data-id="d8c3cd751589e0f701328a2652cc4fa2"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 62px; height: auto;" data-block-id="35e31d30e9e3e7afa41a43b25d671adb"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">PHP 7 - Dépréciation</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 226px;" data-block-id="0a8ae46fcf45c948e71e35c1b3b3c833"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Les fonctions en mysql_* n'existent plus (extension mysql).</p>
+
+<p><span style="color:rgb(255, 255, 255)">Les fonctions en ereg_* n'existent plus (extension ereg)</span><span style="color:rgb(255, 255, 255)">.</span></p>
+
+<p><span style="color:rgb(255, 255, 255)">mcrypt est déprécié en 7.1 et supprimé en 7.2</span></p>
+</div></div></section><section data-id="f3f2167e5eab9dd4b9a6316715c676c9"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 56px; height: auto;" data-block-id="0fa97e0a258156713a743e16c5d8691b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Les sessions</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 721px; left: 120px; top: 163px;" data-block-id="1c6221033c19e1fcb0941a0c5676d331"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Chaque utilisateur d'un site se voit attribué une session avec un identifiant unique. Les sessions expirent après quelques minutes.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 613px; height: 326px; left: 174px; top: 327px;" data-block-id="41363dec4bba1ee79f611faf1d105f12"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code>// Pour utiliser les sessions
+session_start();
+
+// Affiche toutes les informations dans la session courante
+print_r($_SESSION);
+
+// Enregistrer une valeur en session
+$_SESSION['ma_cle_tableau'] = 'toto';
+
+// Accèder à une variable de session
+echo $_SESSION['ma_cle_tableau'];
+
+// Supprimer une variable de session
+unset($_SESSION['ma_cle_tableau']);</code></pre></div></div></section><section data-id="3e409c7e0c86bd17470c8887d34e16d3"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 49px; height: auto;" data-block-id="fc3564a181a158163edb125c61c4f6ea"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Les mots de passe</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 613px; height: 144px; left: 174px; top: 509px;" data-block-id="4dc47141fce5bba6ca671a83f3897e7c"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>// Hachage de mot de passe selon l'algorithme bcrypt
+$password = password_hash('toto', PASSWORD_DEFAULT);
+
+// Retourne true ou false si correspondance
+password_verify('toto', $password);</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 181px; top: 148px;" data-block-id="f4f493d42ac57e9a0bb20ff3553e68a1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>On ne conserve jamais les mots de passe en clair dans une base de données. On préférera les hacher.</p>
+
+<p>On ne doit pas pouvoir retrouver le mot de passe. On doit comparer le vrai mot de passe et vérifier s'il y a une correspondance avec un hash.</p>
+
+<p><strong>NE PAS UTILISER md5 OU sha1</strong></p>
+</div></div></section><section data-id="5ef048b12b92ee80a9050f59c06c51c8"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 31px; height: auto;" data-block-id="b8a5dd92b9aa3cecb145e159d1d2d9f2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Composer</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 181px; top: 428px;" data-block-id="0762432efc780215014a82d8a004be54"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Gestionnaire de dépendances PHP</p>
+
+<p>Déclarer et installer les bibliothèques/frameworks nécessaires pour un projet PHP</p>
+
+<p>Equivalent de NPM pour le PHP</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 211px; height: 259px; left: 375px; top: 140px;" data-block-id="6331e878c43189a57d77c445b5f1d343"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="290" data-natural-height="356" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/725507/images/5002150/logo-composer-transparent5.png"></div></div></section><section data-id="5d1e4fd8b89655b5d2d56a40e6de64ce"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 70px; height: auto;" data-block-id="377cd11274f3e3824ae21f69c36b2edd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Composer - Installation</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 245px;" data-block-id="754b9aa4ba1509844183a2dfc8dfa8e8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Mettre à jour facilement les librairies</p>
+
+<p>S'assurer que tout le monde utilise la même version</p>
+
+<p><span style="color:rgb(255, 255, 255)">Pour installer Composer : https://getcomposer.org/doc/00-intro.md</span></p>
+</div></div></section><section data-id="4ec421337f0ba4f6030c3e7767ab30eb"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 62px; height: auto;" data-block-id="4f82986c889bd9cf3bc6830fb2235d55"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Composer - Usage</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 202px;" data-block-id="e718e06bf6211f323af3082b0bf6aa43"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Composer s'utilise en CLI</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 184px; left: 80px; top: 315px;" data-block-id="605509a766779939e5b0422036e5d3ec"><div class="sl-block-content notranslate" style="z-index: 13;"><pre class="php"><code># Je me déplace dans mon projet
+cd monProjet/
+
+# J'initialise composer comme pour git
+composer init
+
+# On répond aux différentes questions
+# nous permettant de configurer notre projet</code></pre></div></div></section><section data-id="03b1d56e9cd600bb8584b149062f6837"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 62px; height: auto;" data-block-id="622b0526e809b7b8b54ae264195c643e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Composer.json</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 835px; left: 63px; top: 188px;" data-block-id="2e829f40035d7fc68300456ecaae05d9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Le fichier composer.json définit notre projet ainsi que ses dépendances.</p>
+
+<p>On peut trouver des dépendances sur Packagist.org</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 253px; left: 80px; top: 358px;" data-block-id="47df44f9ea3419d83eac91d6066136fb"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>{
+    "name": "matthieu/test",
+    "authors": [
+        {
+            "name": "Matthieu Mota",
+            "email": "matthieumota@gmail.com"
+        }
+    ],
+    "require": {
+        "fzaninotto/faker": "^1.7"
+    }
+}</code></pre></div></div></section><section data-id="eb612f93d61df50ed15f88fd9e7f0c54"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 62px; height: auto;" data-block-id="dedab63509346f0e62aa1d1dae25e145"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Composer - Gestion</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 835px; left: 63px; top: 191px;" data-block-id="94074f6a0e1d25bec6a86be49f44112d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>Pour gérer nos dépendances</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 402px; left: 80px; top: 261px;" data-block-id="c8ae97cef822f081f29f42a5198acca9"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code># La commande va modifier notre fichier composer.json
+# et installer la dépendance
+composer require swiftmailer/swiftmailer
+
+# Un dossier vendor sera crée, il possède toutes nos dépendances
+
+# Si on récupére un projet existant,
+# on peut installer les dépendances
+# composer partira du fichier composer.lock
+# qui vérouille les versions à installer
+composer install
+
+# Pour mettre à jour les dépendances sans
+# se soucier du composer.lock
+composer update
+
+# On peut également modifier la section
+# require du fichier composer.json et lancer
+composer update</code></pre></div></div></section><section data-id="8299b9b43a15c6f44a99374a02b36a68"><div class="sl-block" data-block-type="text" style="width: 904px; left: 28px; top: 31px; height: auto;" data-block-id="d74ed2762b658bfe5f19fbe163ceeb81"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 80%;" dir="ui">
+<h1><span style="font-size:42px">Composer - Versions</span></h1>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 866px; height: 373px; left: 47px; top: 291px;" data-block-id="7cee025bee19c18a2bb92c615476f22a"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="php"><code>"require": {
+    "vendor/package": "1.3.2", // seulement la 1.3.2
+
+    // &gt;, &lt;, &gt;=, &lt;=
+    "vendor/package": "&gt;=1.3.2", // supérieur ou égal à 1.3.2
+    "vendor/package": "&lt;1.3.2", // inférieur à 1.3.2
+
+    // *
+    "vendor/package": "1.3.*", // &gt;=1.3.0 &lt;1.4.0
+
+    // ~
+    "vendor/package": "~1.3.2", // &gt;=1.3.2 &lt;1.4.0
+    "vendor/package": "~1.3", // &gt;=1.3.0 &lt;2.0.0
+
+    // ^
+    "vendor/package": "^1.3.2", // &gt;=1.3.2 &lt;2.0.0
+    "vendor/package": "^0.3.2", // &gt;=0.3.2 &lt;0.4.0 // sauf si la version majeur est 0
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 140px;" data-block-id="1a7919750ad57b4a56d46af32e32cc9e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Possibilité d'utiliser des contraintes sur l'utilisation de versions</p>
+
+<p>Pour tester : https://semver.mwl.be</p>
+</div></div></section>
+				</div>
+				<div class="deck-kudos">
+					<button class="kudos-button kudos-trigger" data-kudos-id="1256654" data-kudoed-by-user="false">
+						<div class="kudos-heart">
+							<span class="kudos-icon icon i-heart-fill"></span>
+						</div>
+						<div class="kudos-count" data-kudos-value="11" data-kudos-id="1256654"></div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pill summary-pill">
+		<div class="pill-picture" style="background-image: url(https://www.gravatar.com/avatar/5355a3882df0fdd7689f8b0b5dc50720?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></div>
+		<div class="pill-content">
+			<h4 class="pill-title">PHP</h4>
+			<p class="pill-description">By Matthieu Mota</p>
+		</div>
+	</div>
+
+	<div class="pill instructions-pill">
+		<div class="pill-picture"></div>
+		<div class="pill-content">
+			<h4 class="pill-title"></h4>
+			<p class="pill-description"></p>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="column">
+	<header class="deck-card">
+		<div class="deck-social">
+			<a href="#" class="deck-social-button facebook-share-button" data-tooltip="Share on Facebook">
+				<span class="icon i-facebook"></span>
+			</a>
+			<a href="#" class="deck-social-button twitter-share-button" data-tooltip="Share on Twitter">
+				<span class="icon i-twitter"></span>
+			</a>
+			<a href="#" class="deck-social-button google-share-button" data-tooltip="Share on Google+">
+			</a>
+		</div>
+
+		<div class="deck-promotion">
+			<a class="button cta" href="/pricing?ref=caplt">Create a presentation like this <span class="logo"></span></a>
+		</div>
+
+
+		<div class="deck-options">
+			<a class="fullscreen-button" data-tooltip="Fullscreen" href="#"><span class="icon i-fullscreen"></span></a>
+			<a class="comment-button" data-tooltip="Comments" data-scroll-to href="#comments" data-scroll-to data-scroll-to-offset="-90"><span class="icon i-comment-stroke"></span></a>
+			<a class="share-button" data-tooltip="Share" href="#"><span class="icon i-share"></span></a>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="details">
+			<div class="deck-info">
+				<h3 class="title">PHP</h3>
+				<ul class="deck-meta">
+					<li data-tooltip="Published date" data-tooltip-delay="500">
+						<span class="icon i-clock"></span>
+						<time class="value ago" datetime="2018-05-17 15:58:19 UTC"></time>
+					</li>
+					<li data-tooltip="Kudos" data-tooltip-delay="500">
+						<span class="icon i-heart-fill"></span>
+						<span class="value" data-kudos-value="11" data-kudos-id="1256654"></span>
+					</li>
+					<li data-tooltip="Views" data-tooltip-delay="500">
+						<span class="icon i-eye"></span>
+						<span class="value">188</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="user-info">
+	<div class="picture" style="background-image: url(https://www.gravatar.com/avatar/5355a3882df0fdd7689f8b0b5dc50720?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></div>
+	<div class="text">
+		<h3 class="title">
+			<a href="/matthieumota" class="username">Matthieu Mota</a>
+		</h3>
+		<p class="description">Web developer</p>
+		<ul class="links">
+			 <li><a target="_blank" href="http://www.matthieumota.fr"><span class="icon i-link"></span>http://www.matthieumota.fr</a></li> 
+			 <li><a href="http://twitter.com/matthieumota" target="_blank"><span class="icon i-twitter"></span>matthieumota</a></li> 
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+
+			<div class="clear"></div>
+		</div>
+	</header>
+
+	<section class="comments" id="comments">
+		<div id="disqus_thread"><span class="placeholder">Loading comments...</span></div>
+	</section>
+
+	<section class="deck-list">
+		<h2>More from <a href="/matthieumota">Matthieu Mota</a></h2>
+		<ul class="carousel">
+			<li class="deck-thumbnail">
+  <a class="deck-link" href="/matthieumota/cahier-des-charges"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/d789f269e675a0cc881e0dd446125999/thumb.jpg?1540799120)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">Cahier des charges</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/matthieumota">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/5355a3882df0fdd7689f8b0b5dc50720?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">Matthieu Mota</span>
+      </a>
+      <div class="stats">
+        <div>0<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+<li class="deck-thumbnail">
+  <a class="deck-link" href="/matthieumota/etude-de-marche-et-audit-site-web"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/d45c6d4046e67ee9e708428fec069eba/thumb.jpg?1540799233)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">Étude de marché et audit site web</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/matthieumota">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/5355a3882df0fdd7689f8b0b5dc50720?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">Matthieu Mota</span>
+      </a>
+      <div class="stats">
+        <div>1<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+<li class="deck-thumbnail">
+  <a class="deck-link" href="/matthieumota/analyse-fonctionnelle"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/5e81c8d591dfd3c90263a0d77492a727/thumb.jpg?1540737169)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">Analyse fonctionnelle</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/matthieumota">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/5355a3882df0fdd7689f8b0b5dc50720?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">Matthieu Mota</span>
+      </a>
+      <div class="stats">
+        <div>1<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+<li class="deck-thumbnail">
+  <a class="deck-link" href="/matthieumota/git"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/3059bc85684725e4d90df81423aa7b34/thumb.jpg?1539436464)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">Git</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/matthieumota">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/5355a3882df0fdd7689f8b0b5dc50720?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">Matthieu Mota</span>
+      </a>
+      <div class="stats">
+        <div>11<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+
+		</ul>
+	</section>
+
+</div>
+      </div>
+      <footer class="global-footer">
+    <div class="link-group">
+      <h5>Tour</h5>
+      <a href="http://slides.com/?root=true">Home</a>
+      <a href="http://slides.com/explore?root=true">Explore Decks</a>
+      <a href="http://slides.com/features?root=true">Features</a>
+      <a href="http://slides.com/pricing?root=true">Pricing</a>
+      <a href="http://slides.com/developers?root=true">For Developers</a>
+    </div>
+
+    <div class="link-group">
+      <h5>Help</h5>
+      <a href="http://help.slides.com" target="_blank">Forum</a>
+      <a href="http://help.slides.com/knowledgebase" target="_blank">Knowledge Base</a>
+      <a href="http://help.slides.com" data-feedback-mode="smartvote">Leave Feedback</a>
+      <a href="http://help.slides.com" data-feedback-mode="contact">Report an Issue</a>
+    </div>
+
+    <div class="link-group">
+      <h5>Follow</h5>
+      <a href="https://slides.com/news/" target="_blank">News</a>
+      <a href="http://blog.slides.com" target="_blank">Blog</a>
+      <a href="https://twitter.com/slides" target="_blank">Twitter</a>
+      <a href="https://facebook.com/slidesapp" target="_blank">Facebook</a>
+    </div>
+
+    <div class="link-group">
+      <h5>Company</h5>
+      <a href="http://slides.com/about?root=true">About Slides</a>
+      <a href="http://slides.com/changelog?root=true">Changelog</a>
+      <a href="http://slides.com/security?root=true">Security</a>
+      <a href="http://slides.com/partners?root=true">Partners</a>
+    </div>
+
+    <div class="legal">
+      <a href="http://slides.com/terms?root=true">Terms</a>
+      &bull; <a href="http://slides.com/privacy?root=true">Privacy</a>
+      &bull; <span class="copyright">&copy; 2018 Slides, Inc.</span>
+    </div>
+</footer>
+
+    </div> <!--! end of #container -->
+    <script>
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/f7sH7NavrjjvuGxByaw.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+UserVoice.push(['set', {
+  accent_color: '#448dd6',
+  trigger_color: 'white',
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)',
+  position: 'automatic'
+}]);
+
+</script>
+    
+<script>
+	var SLConfig = {"deck":{"id":1256654,"slug":"php","title":"PHP","description":"","width":960,"height":700,"visibility":"all","published_at":"2018-05-17T15:58:19.480Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/ce5962a31bd27cd32205532b37f39ca6/thumb.jpg?1539340393","view_count":188,"user":{"id":725507,"username":"matthieumota","name":"Matthieu Mota","description":"Web developer","thumbnail_url":"https://www.gravatar.com/avatar/5355a3882df0fdd7689f8b0b5dc50720?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":575420,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"blue-yellow","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":82,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1540376925675,"font_typekit":null,"font_google":null},"user":{"id":725507,"username":"matthieumota","name":"Matthieu Mota","description":"Web developer","thumbnail_url":"https://www.gravatar.com/avatar/5355a3882df0fdd7689f8b0b5dc50720?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":575420,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+</script>
+    <script src="//assets.slid.es/assets/application-2a97696308ff18b39ffb502c04e3f20f3c608cb1ffb649d20382a338a0e99a51.js" defer="defer"></script>
+    	<script src="//assets.slid.es/assets/deck-d2f6cef3f008bdacb7ffb433e086d30c64d64b5a67eb39b66b2d4bfb92bc2015.js" defer="defer"></script>
+	
+
+
+  </body>
+</html>

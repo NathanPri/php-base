@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax</title>
+</head>
+<body>
+        
+            <!-- Liste des cryptos -->
+        <select id="cryptos">
+            <option value="">-------</option>
+            <!-- <option value=" "> </option> -->
+        </select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <button id="get_btc">Get my Bitcoin !</button>
+
+
+<!-- 
+        1. On récupère le listing des cryptos
+        2. générer un select avec la liste des cryptos
+            <option value="BTC">Bitcoin</option>
+        3. Qd on chnge la crypto sur select, on affiche de la crypto en USD.
+ -->
+
+
+
+
+
+
+
+
+
+
+    <!-- On charge les librairies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Puis on charge notre logique -->
+        <script>
+
+            $(document).ready(function(){
+        
+        var el_cryptos = $('#cryptos');
+        var symbol;
+        // Récup du listing des cryptos
+        $.ajax({
+            url: "https://api.coinmarketcap.com/v2/listings/",
+            success: function(r){
+                var cryptos = r.data;
+                $.each( cryptos, function(index, crypto){
+                    var el_opt = $('<option>');
+                        el_opt.attr('value', crypto.symbol);
+                        el_opt.text(crypto.name);
+                    el_cryptos.append(el_opt);
+                });
+            }
+        });
+        // Detecte le "change" sur le <select>
+        el_cryptos.on('change', function(){
+            symbol = $(this).val();
+            $.ajax({
+                method: 'GET',
+                url: 'https://api.coinmarketcap.com/v2/ticker/',
+                success: show_crypto,
+                error: function() {
+                    alert("Your "+symbol+" as gone away !");
+                }
+            });
+        });
+        function show_crypto( response ) {
+            // Récupération de la liste des cryptos.
+            var cryptos = response.data;
+            // On boucle sur la liste des cryptos ...
+            $.each(cryptos, function(index, crypto) {
+                // ... on récupère la crypto BTC
+                if (crypto.symbol == symbol) {
+                    console.log( crypto.quotes.USD.price );
+                }
+            });
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //  La partie requête de AJAX
+        function get_btc(){
+            $.ajax({
+                method:'GET',
+                url:'https://api.coinmarketcap.com/v2/ticker/?convert=BTC&limit=10',
+                success: show_btc,
+                error: function() {
+                    alert("Your Bitcoin as gone away !");
+                }
+            });
+            
+        }
+
+    //  La Partie DOM de AJAX
+        function show_btc( response ){
+            //  récupération de la liste des cryptos.
+          var cryptos = response.data;
+
+        //On boucle sur la liste des cryptos....
+        //...On récupère la crypto BTC
+        $.each(cryptos, function(index, crypto){
+           
+
+            
+            if(crypto.symbol === "BTC"){
+                 console.log( crypto.quotes.USD.price );
+            }
+        });
+   
+        
+        }
+
+
+        $(document).ready(function(){
+
+        // Clic sur bouton "get_btc" 
+        $('#get_btc').on('click', get_btc);
+
+    
+    });
+        </script>
+
+    
+</body>
+</html>

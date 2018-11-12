@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="get_ajax()">Get</button> 
+
+
+    <script>
+    function get_ajax(){
+
+        // Variable qui va stocker l'isntace de XMLHttpRequest
+        var xhr;
+        // Instance de l'objet XMLHttpRequest
+        
+        
+        if(window.ActiveXObject){ //IE  
+            xhr = new ActiveXObject('Microsoft.XMLHTTP');
+        }
+        else if (window.XMLHttpRequest){ //Les autres nav.
+            xhr = new XMLHttpRequest();
+        }
+        else{ // Les nav bcp trop vieux (entre 0 et 1 %)
+            alert("Votre Nav est trop Old School! >Mettez-vous a jour et revenez-nous voirs !Love Love \^^/!"); 
+        }
+    
+        // Est ce que XHR n'est pas indéfinie...
+        // Est ce que XHR est utilisable...
+
+        if(xhr != undefined){  //initialise la demande
+            // methode : fonction associée objet
+            xhr.open(
+              /*methode*/  'GET', //Methode de requete
+              /*url*/      'https://api.coinmarketcap.com/v2/listings/', //URL
+              /*async*/     true, //falcultatif, si false, ne retourne pas la rep.
+              /*user*/      null, //falcultatif, Nom de l'user
+              /*methode*/   null, //falcultatif, Mot de passe
+            );
+
+            //Traiter l'état de la requete
+            xhr.onreadystatechange = function()
+            {
+
+                // readyState
+                // 0 : Non-envoyé
+                // 1: Serveur connexion
+                // 2: Headers http recu
+                // 3: chargement en cour
+                // 4: Fini !
+
+
+                console.log('Ready State : '+ xhr.readyState );  // Etat de la requete : terminé ou non
+                console.log('Status : '+ xhr.status );  //  resultat : Echec ou succes
+
+
+                if(xhr.readyState == 4 && xhr.status == 200)
+                {
+                    // console.log('La requête est finie !');
+                    console.log(xhr.responseText);
+                }
+                 // Requete : Error
+                //  else
+                // {
+                //     console.log('Ooopps ... !');
+                   
+                // }
+                xhr.setRequestHeader('Content-type', 'application/json');
+            }
+                // Envoi de la requête
+                xhr.send();
+        }
+
+
+    }
+    </script>
+
+
+
+</body>
+</html>

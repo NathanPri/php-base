@@ -61,6 +61,12 @@ if (!empty($_POST)) {
             $errors['image'] = 'Ce type de fichier n\'est pas autorisé';
         }
 
+        // Verifier la taille du fichier
+        // Le 30 est defini en Ko
+        if ($image['size']/ 1024 > 50){
+            $errors['image'] = 'L\'image est trop lourde';
+        }
+
         if(!isset($errors['image'])){
              move_uploaded_file($file,__DIR__.'/assets/'.$fileName); // On déplace le fichier temporaire uploadé ou on le souhaite. 
         }
@@ -70,7 +76,7 @@ if (!empty($_POST)) {
     // S'il n'y a pas d'erreurs dans le formulaire
     if (empty($errors)) {
         $query = $db->prepare('
-            INSERT INTO pizza (`name`, `price`, `image`, `category`, `description` ) VALUES (:name, :price, :image, :category, :description)
+            INSERT INTO Film (`name`, `price`, `image`, `category`, `description` ) VALUES (:name, :price, :image, :category, :description)
         ');
         $query->bindValue(':name', $name, PDO::PARAM_STR);
         $query->bindValue(':price', $price, PDO::PARAM_STR);
