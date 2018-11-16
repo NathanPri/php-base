@@ -1,0 +1,72 @@
+/**
+* En autonomie : Gérer un parc automobile
+*  Créer une classe
+*   Créer une classe "Voiture"
+*/
+
+
+​
+/**
+* 
+*  
+*   Ajouter des propriétés
+* Les propriétés nous servirons à distinguer les voitures.
+* 
+*  Marque
+* Modèle
+*  Couleur
+* En marche (oui ou non ?)
+*
+*
+*
+*Vitesse (par défaut 0km/h)
+
+*Nom du conducteur
+
+*Ajouter des méthodes
+*Les méthodes sont les actions que les voitures pourrons exécuter.
+
+*Démarrer (le véhicule doit être à l'arrêt)
+
+*Avancer (le véhicule doit être démarrer)
+
+*Freiner (le véhicule doit avancer)
+
+*Tourner (la vitesse ne doit pas être > à 30 km/h)
+
+*S'arrêter (le véhicule doit être en marche et à une vitesse de 0km/h)
+
+*Créer les voitures
+*Créer trois voitures :
+
+*Voiture 1
+*Voiture 2
+*Voiture 3
+*Marque : Ford
+
+*Modèle : Ranger
+
+*Couleur : Noire
+
+*Conducteur : Michel
+
+*Déplacer les véhicules
+*Démarrer les véhicules 1 et 3
+
+*le véhicule 1 accélère jusqu'à 50km/h
+
+*le véhicule 3 accélère jusqu'à 30km/h
+
+*les deux véhicules tournent à droite
+
+*le véhicule 1 ralenti de 30km/h
+
+*le véhicule 3 accélère de 40km/h
+
+*le véhicule 1 tourne à gauche
+
+*on arrête tous les véhicules
+
+*Affiche le nom des conducteurs des 3 véhicules et leur vitesse max.
+
+*/

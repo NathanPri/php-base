@@ -1,0 +1,3 @@
+<?php
+
+$monObjet = new MaClasse
